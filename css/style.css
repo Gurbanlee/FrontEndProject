@@ -15,4 +15,17 @@ body #header-info {
   background-position: center center;
   height: 1000px;
   opacity: 0.6;
+  padding: 30px 0 0 15px;
+}
+
+body #header-info .navbar-brand {
+  font-weight: 800;
+}
+
+body #header-info a {
+  color: #fff;
+}
+
+body #header-info ul li {
+  margin-right: 40px;
 }
