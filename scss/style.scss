@@ -5,7 +5,11 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 1.642;
-
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
   section {
     padding: 60px 0;
   }
@@ -14,8 +18,19 @@ body {
     background-size: cover;
     background-position: center center;
     height: 1000px;
-    opacity: 0.6;
+    // opacity: 0.6;
     padding: 30px 0 0 15px;
+    position: relative;
+    ::before {
+      content: "";
+      background-color: rgb(29, 41, 62);
+      opacity: 0.6;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
     .navbar-brand {
       font-weight: 800;
     }
@@ -25,6 +40,40 @@ body {
     ul {
       li {
         margin-right: 40px;
+      }
+    }
+    .find-home {
+      margin-top: 300px;
+      .fh-about {
+        color: $white;
+        h1 {
+          font-weight: 800;
+          font-size: 55px;
+          text-transform: capitalize;
+        }
+        h5 {
+          font-weight: 550;
+        }
+      }
+      .fh-pills {
+        margin-top: 40px;
+        ul {
+          li {
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            background-color: $white;
+            border-radius: 8px;
+            a {
+              color: $black;
+              line-height: 3.1;
+              font-weight: 550;
+            }
+          }
+          .active {
+            background-color: #ff5a5f;
+          }
+        }
       }
     }
   }
