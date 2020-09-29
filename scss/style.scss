@@ -65,6 +65,50 @@ body {
             background-color: #ff5a5f;
           }
         }
+        .tab-content {
+          .fh-search {
+            background-color: $white;
+            border: 5px solid rgba(255, 255, 255, 0.15);
+            border-radius: 8px;
+            .fh-search-body {
+              padding: 30px 15px;
+              .form-control {
+                display: inline-block;
+                width: auto;
+                color: $black;
+                font-size: 14px;
+                &::placeholder {
+                  color: $black;
+                }
+              }
+              .fh-search-location {
+                position: relative;
+                display: inline-block;
+                .fas {
+                  position: absolute;
+                  right: 10px;
+                  top: 9px;
+                }
+              }
+              .dropdown {
+                display: inline-block;
+                color: $black;
+                .btn-secondary {
+                  background-color: transparent;
+                  color: $black;
+                  border-color: transparent;
+                  display: inline-block;
+                }
+                .dropdown-menu {
+                  .fh-dropdown {
+                    background-color: $white;
+                    width: 500px;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

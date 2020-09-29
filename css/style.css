@@ -74,4 +74,53 @@ body #header-info .find-home .fh-pills ul li a {
 body #header-info .find-home .fh-pills ul .active {
   background-color: #ff5a5f;
 }
+
+body #header-info .find-home .fh-pills .tab-content .fh-search {
+  background-color: #fff;
+  border: 5px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body {
+  padding: 30px 15px;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .form-control {
+  display: inline-block;
+  width: auto;
+  color: #000;
+  font-size: 14px;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .form-control::placeholder {
+  color: #000;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-search-location {
+  position: relative;
+  display: inline-block;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-search-location .fas {
+  position: absolute;
+  right: 10px;
+  top: 9px;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown {
+  display: inline-block;
+  color: #000;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown .btn-secondary {
+  background-color: transparent;
+  color: #000;
+  border-color: transparent;
+  display: inline-block;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown .dropdown-menu .fh-dropdown {
+  background-color: #fff;
+  width: 500px;
+}
 /*# sourceMappingURL=style.css.map */

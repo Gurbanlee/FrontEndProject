@@ -1,92 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FindHouse - Real Estate</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <header>
-      <section class="bg-1" id="header-info">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <a class="navbar-brand" href="#">
-            <img
-              src="uploads/img/logo.png"
-              class="d-inline-block align-top"
-              alt="logo"
-              width="30"
-              height="30"
-            />
-            FindHouse
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Listing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Property</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pages</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FindHouse - Real Estate</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <div class="find-home text-center">
-                <div class="fh-about">
-                  <h1>find your dream home</h1>
-                  <h5>
-                    From as low as $10 per day with limited time offer
-                    discounts.
-                  </h5>
-                </div>
-                <div class="fh-pills">
-                  <ul class="nav-pills">
-                    <li class="active">
-                      <a data-toggle="pill" href="#buy">Buy</a>
-                    </li>
-                    <li><a data-toggle="pill" href="#rent">Rent</a></li>
-                  </ul>
+<body>
+  <header>
+    <section id="header-info">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="uploads/img/logo.png" class="img-fluid d-inline-block align-top" alt="logo" width="30"
+            height="30" />
+          FindHouse
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-                  <div class="tab-content">
-                    <div id="buy" class="tab-pane fade in active">
-                      <h3>Menu 1</h3>
-                      <p>Some content in menu 1.</p>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Listing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Property</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="find-home text-center">
+              <div class="fh-about">
+                <h1>find your dream home</h1>
+                <h5>
+                  From as low as $10 per day with limited time offer
+                  discounts.
+                </h5>
+              </div>
+              <div class="fh-pills">
+                <ul class="nav-pills">
+                  <li class="active"><a data-toggle="pill" href="#buy">Buy</a></li>
+                  <li><a data-toggle="pill" href="#rent">Rent</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div id="buy" class="tab-pane fade in active show">
+                    <div class="fh-search text-left">
+                      <div class="fh-search-body">
+                        <input type="text" class="form-control" placeholder="Enter keyword...">
+                        <select class="form-control">
+                          <option disabled>Property type</option>
+                          <option>Apartment</option>
+                          <option>Bungalow</option>
+                          <option>Condo</option>
+                          <option>House</option>
+                          <option>Land</option>
+                          <option>Single Family</option>
+                        </select>
+                        <div class="fh-search-location">
+                          <input type="text" class="form-control" placeholder="Location"><i
+                            class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Price">
+                        <div class="dropdown">
+                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Advanced
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="fh-dropdown">
+                              <div class="row">
+                                <div class="col-lg-12">
+                                  <h2>
+                                    Amenities
+                                  </h2>
+                                </div>
+                                <div class="col-xxs-6 col-sm col-lg col-xl">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      air conditioning
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      lawn
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      swimming pool
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-xxs-6 col-sm col-lg col-xl">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      barbeque
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      microwave
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      TV cable
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-xxs-6 col-sm col-lg col-xl">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      dryer
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      outdoor shower
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      washer
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-xxs-6 col-sm col-lg col-xl">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      gym
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      refrigerator
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      wiFi
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-xxs-6 col-sm col-lg col-xl">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      laundry
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      sauna
+                                    </label>
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                      Window Coverings
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Bathrooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Bedrooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Year built</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Built-up Area</option>
+                                    <option>Adana</option>
+                                    <option>Ankara</option>
+                                    <option>Antalya</option>
+                                    <option>Bursa</option>
+                                    <option>Bodrum</option>
+                                    <option>Istanbul</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div id="rent" class="tab-pane fade">
-                      <h3>Menu 2</h3>
-                      <p>Some content in menu 2.</p>
+                      <h3>Menu 1</h3>
+                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                        commodo
+                        consequat.</p>
                     </div>
                   </div>
                 </div>
@@ -94,11 +240,12 @@
             </div>
           </div>
         </div>
-      </section>
-    </header>
+    </section>
+  </header>
+  <script src="https://kit.fontawesome.com/9176eba334.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  </body>
 </html>
