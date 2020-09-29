@@ -16,6 +16,7 @@ body {
   .col-half-offset {
     margin-left: 4.166666667%;
   }
+  //////////////// HEADER SECTION START ////////////////
   #header-info {
     background-image: url(../uploads/img/bg.jpg);
     background-size: cover;
@@ -122,4 +123,11 @@ body {
       }
     }
   }
+  //////////////// HEADER SECTION END ////////////////
+  
+  //////////////// MAIN SECTION START ////////////////
+  #featured{
+    
+  }
+  //////////////// MAIN SECTION END ////////////////
 }
