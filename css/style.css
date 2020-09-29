@@ -140,7 +140,6 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
 
 body #featured {
   background-color: #f7f7f7;
-  height: 1000px;
 }
 
 body #featured h3 {
@@ -230,11 +229,39 @@ body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
 }
 
 body #featured .fp-card .fp-body {
-  margin-top: 15px;
+  margin: 15px 0 20px 10px;
 }
 
 body #featured .fp-card .fp-body .fp-category {
   color: #ff5a5f;
   font-size: 14px;
+}
+
+body #featured .fp-card .fp-body .fp-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+body #featured .fp-card .fp-body .fp-address {
+  font-size: 14px;
+  line-height: 1.2;
+  word-spacing: -3px;
+}
+
+body #featured .fp-card .fp-body .fp-about {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+body #featured .fp-card .fp-body .fp-about .fp-about-bed,
+body #featured .fp-card .fp-body .fp-about .fp-about-baths {
+  margin-right: 30px;
+}
+
+body #featured .fp-card .fp-body .fp-author {
+  border-top: 1px solid #eeeeee;
+  padding: 20px;
+  margin-top: 25px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

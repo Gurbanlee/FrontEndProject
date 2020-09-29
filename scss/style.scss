@@ -128,7 +128,6 @@ body {
   //////////////// MAIN SECTION START ////////////////
   #featured {
     background-color: #f7f7f7;
-    height: 1000px;
     h3 {
       font-weight: 800;
       text-transform: capitalize;
@@ -201,10 +200,33 @@ body {
         }
       }
       .fp-body {
-        margin-top: 15px;
+        margin: 15px 0 20px 10px;
         .fp-category {
           color: $main-color;
           font-size: 14px;
+        }
+        .fp-title {
+          font-weight: 700;
+          font-size: 18px;
+        }
+        .fp-address {
+          font-size: 14px;
+          line-height: 1.2;
+          word-spacing: -3px;
+        }
+        .fp-about {
+          font-size: 14px;
+          line-height: 1.2;
+          .fp-about-bed,
+          .fp-about-baths {
+            margin-right: 30px;
+          }
+        }
+        .fp-author {
+          border-top: 1px solid #eeeeee;
+          padding: 20px;
+          margin-top: 25px;
+          width: 100%;
         }
       }
     }
