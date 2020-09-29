@@ -70,7 +70,7 @@
                       <div class="fh-search-body">
                         <input type="text" class="form-control" placeholder="Enter keyword...">
                         <select class="form-control">
-                          <option disabled>Property type</option>
+                          <option disabled selected>Property type</option>
                           <option>Apartment</option>
                           <option>Bungalow</option>
                           <option>Condo</option>
@@ -83,98 +83,114 @@
                             class="fas fa-map-marker-alt"></i>
                         </div>
                         <input type="number" class="form-control" placeholder="Price">
-                        <div class="dropdown">
-                          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Advanced
-                          </button>
-                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <div class="fh-dropdown">
-                              <div class="row">
-                                <div class="col-lg-12">
-                                  <h2>
-                                    Amenities
-                                  </h2>
+                        <span class="fh-dropdown ml-3">
+                          Advanced
+                          <i class="ml-3 fas fa-ellipsis-v"></i>
+                          <div class="fh-dpd d-none">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <h2>
+                                  Amenities
+                                </h2>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    air conditioning
+                                  </label>
                                 </div>
-                                <div class="col-xxs-6 col-sm col-lg col-xl">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      air conditioning
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      lawn
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      swimming pool
-                                    </label>
-                                  </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    lawn
+                                  </label>
                                 </div>
-                                <div class="col-xxs-6 col-sm col-lg col-xl">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      barbeque
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      microwave
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      TV cable
-                                    </label>
-                                  </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    swimming pool
+                                  </label>
                                 </div>
-                                <div class="col-xxs-6 col-sm col-lg col-xl">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      dryer
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      outdoor shower
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      washer
-                                    </label>
-                                  </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    barbeque
+                                  </label>
                                 </div>
-                                <div class="col-xxs-6 col-sm col-lg col-xl">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      gym
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      refrigerator
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      wiFi
-                                    </label>
-                                  </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    microwave
+                                  </label>
                                 </div>
-                                <div class="col-xxs-6 col-sm col-lg col-xl">
-                                  <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      laundry
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      sauna
-                                    </label>
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                    <label class="form-check-label" for="defaultCheck1">
-                                      Window Coverings
-                                    </label>
-                                  </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    TV cable
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    dryer
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    outdoor shower
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    washer
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    gym
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    refrigerator
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    wiFi
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    laundry
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    sauna
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    window coverings
+                                  </label>
                                 </div>
                               </div>
                               <div class="row">
@@ -225,14 +241,190 @@
                               </div>
                             </div>
                           </div>
-                        </div>
+                        </span>
+                        <button type="button" class="btn btn-primary ml-1">Search</button>
                       </div>
                     </div>
-                    <div id="rent" class="tab-pane fade">
-                      <h3>Menu 1</h3>
-                      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo
-                        consequat.</p>
+                  </div>
+                  <div id="rent" class="tab-pane fade in">
+                    <div class="fh-search text-left">
+                      <div class="fh-search-body">
+                        <input type="text" class="form-control" placeholder="Enter keyword...">
+                        <select class="form-control">
+                          <option disabled selected>Property type</option>
+                          <option>Apartment</option>
+                          <option>Bungalow</option>
+                          <option>Condo</option>
+                          <option>House</option>
+                          <option>Land</option>
+                          <option>Single Family</option>
+                        </select>
+                        <div class="fh-search-location">
+                          <input type="text" class="form-control" placeholder="Location"><i
+                            class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <input type="number" class="form-control" placeholder="Price">
+                        <span class="fh-dropdown ml-3">
+                          Advanced
+                          <i class="ml-3 fas fa-ellipsis-v"></i>
+                          <div class="fh-dpd d-none">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <h2>
+                                  Amenities
+                                </h2>
+                              </div>
+                              <div class="col-lg-2">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    air conditioning
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    lawn
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    swimming pool
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    barbeque
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    microwave
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    TV cable
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    dryer
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    outdoor shower
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    washer
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    gym
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    refrigerator
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    wiFi
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="col-lg-2 col-half-offset">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    laundry
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    sauna
+                                  </label>
+                                </div>
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                  <label class="form-check-label" for="defaultCheck1">
+                                    window coverings
+                                  </label>
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Bathrooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Bedrooms</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Year built</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                  </select>
+                                </div>
+                                <div class="col-lg-3">
+                                  <select class="form-control">
+                                    <option disabled selected>Built-up Area</option>
+                                    <option>Adana</option>
+                                    <option>Ankara</option>
+                                    <option>Antalya</option>
+                                    <option>Bursa</option>
+                                    <option>Bodrum</option>
+                                    <option>Istanbul</option>
+                                  </select>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </span>
+                        <button type="button" class="btn btn-primary ml-1">Search</button>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -240,6 +432,7 @@
             </div>
           </div>
         </div>
+      </div>
     </section>
   </header>
   <script src="https://kit.fontawesome.com/9176eba334.js" crossorigin="anonymous"></script>

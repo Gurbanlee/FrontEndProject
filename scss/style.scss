@@ -13,6 +13,9 @@ body {
   section {
     padding: 60px 0;
   }
+  .col-half-offset {
+    margin-left: 4.166666667%;
+  }
   #header-info {
     background-image: url(../uploads/img/bg.jpg);
     background-size: cover;
@@ -20,7 +23,6 @@ body {
     height: 1000px;
     padding: 30px 0 0 15px;
     background-color: rgb(29, 41, 62);
-    opacity: 0.6;
 
     .navbar-brand {
       font-weight: 800;
@@ -62,7 +64,7 @@ body {
             }
           }
           .active {
-            background-color: #ff5a5f;
+            background-color: $main-color;
           }
         }
         .tab-content {
@@ -77,6 +79,8 @@ body {
                 width: auto;
                 color: $black;
                 font-size: 14px;
+                height: 50px;
+                margin-left: 20px;
                 &::placeholder {
                   color: $black;
                 }
@@ -86,24 +90,30 @@ body {
                 display: inline-block;
                 .fas {
                   position: absolute;
-                  right: 10px;
-                  top: 9px;
+                  right: 13px;
+                  top: 17px;
                 }
               }
-              .dropdown {
-                display: inline-block;
+              .fh-dropdown {
+                position: relative;
                 color: $black;
-                .btn-secondary {
-                  background-color: transparent;
-                  color: $black;
-                  border-color: transparent;
-                  display: inline-block;
+                display: inline-block;
+                font-size: 14px;
+                .fh-dpd {
+                  position: absolute;
                 }
-                .dropdown-menu {
-                  .fh-dropdown {
-                    background-color: $white;
-                    width: 500px;
-                  }
+              }
+              .btn {
+                width: 170px;
+                height: 50px;
+                background-color: $main-color;
+                border-color: $main-color;
+                border-radius: 8px;
+                font-weight: 600;
+                &:hover {
+                  background-color: $white;
+                  border: 2px solid $main-color;
+                  color: $main-color;
                 }
               }
             }

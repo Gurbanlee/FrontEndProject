@@ -13,6 +13,10 @@ body section {
   padding: 60px 0;
 }
 
+body .col-half-offset {
+  margin-left: 4.166666667%;
+}
+
 body #header-info {
   background-image: url(../uploads/img/bg.jpg);
   background-size: cover;
@@ -20,7 +24,6 @@ body #header-info {
   height: 1000px;
   padding: 30px 0 0 15px;
   background-color: #1d293e;
-  opacity: 0.6;
 }
 
 body #header-info .navbar-brand {
@@ -90,6 +93,8 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
   width: auto;
   color: #000;
   font-size: 14px;
+  height: 50px;
+  margin-left: 20px;
 }
 
 body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .form-control::placeholder {
@@ -103,24 +108,33 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
 
 body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-search-location .fas {
   position: absolute;
-  right: 10px;
-  top: 9px;
+  right: 13px;
+  top: 17px;
 }
 
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown {
-  display: inline-block;
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dropdown {
+  position: relative;
   color: #000;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown .btn-secondary {
-  background-color: transparent;
-  color: #000;
-  border-color: transparent;
   display: inline-block;
+  font-size: 14px;
 }
 
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .dropdown .dropdown-menu .fh-dropdown {
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dropdown .fh-dpd {
+  position: absolute;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .btn {
+  width: 170px;
+  height: 50px;
+  background-color: #ff5a5f;
+  border-color: #ff5a5f;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .btn:hover {
   background-color: #fff;
-  width: 500px;
+  border: 2px solid #ff5a5f;
+  color: #ff5a5f;
 }
 /*# sourceMappingURL=style.css.map */
