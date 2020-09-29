@@ -138,6 +138,76 @@ body {
       color: rgb(119, 119, 119);
       letter-spacing: 1px;
     }
+    .fp-card {
+      margin-top: 30px;
+      background-color: $white;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ebebeb;
+      transition: all 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+      .fp-thumb {
+        position: relative;
+        img {
+          border-radius: 8px;
+        }
+        .red-con {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          background-color: $main-color;
+          color: $white;
+          padding: 3px 12px;
+          border-radius: 3px;
+          text-transform: capitalize;
+          font-size: 14px;
+        }
+        .fp-on-thumb {
+          position: relative;
+          .fp-left-side {
+            position: absolute;
+            top: -45px;
+            left: 30px;
+            .fp-price {
+              font-size: 22px;
+              color: $white;
+              font-weight: 700;
+            }
+            .text-muted {
+              color: $white !important;
+            }
+          }
+          .fp-right-side {
+            position: absolute;
+            right: 30px;
+            bottom: 10px;
+            color: $white;
+            .fp-black-bg {
+              display: inline-block;
+              background-color: rgba(0, 0, 0, 0.5);
+              width: 35px;
+              height: 35px;
+              margin: 3px;
+              border-radius: 8px;
+              text-align: center;
+              i {
+                line-height: 2.2;
+              }
+            }
+          }
+        }
+      }
+      .fp-body {
+        margin-top: 15px;
+        .fp-category {
+          color: $main-color;
+          font-size: 14px;
+        }
+      }
+    }
   }
   //////////////// MAIN SECTION END ////////////////
 }

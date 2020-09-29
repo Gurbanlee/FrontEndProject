@@ -153,4 +153,88 @@ body #featured p {
   color: #777777;
   letter-spacing: 1px;
 }
+
+body #featured .fp-card {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  transition: all 0.3s ease;
+}
+
+body #featured .fp-card:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+body #featured .fp-card .fp-thumb {
+  position: relative;
+}
+
+body #featured .fp-card .fp-thumb img {
+  border-radius: 8px;
+}
+
+body #featured .fp-card .fp-thumb .red-con {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 3px 12px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-size: 14px;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb {
+  position: relative;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
+  position: absolute;
+  top: -45px;
+  left: 30px;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 700;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
+  color: #fff !important;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
+  color: #fff;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 35px;
+  height: 35px;
+  margin: 3px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
+  line-height: 2.2;
+}
+
+body #featured .fp-card .fp-body {
+  margin-top: 15px;
+}
+
+body #featured .fp-card .fp-body .fp-category {
+  color: #ff5a5f;
+  font-size: 14px;
+}
 /*# sourceMappingURL=style.css.map */
