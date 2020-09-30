@@ -395,6 +395,7 @@ body {
   height: 1000px;
   background-color: $section-bg;
   .blog-card {
+    height: 100%;
     margin-top: 30px;
     background-color: $white;
     padding: 10px;
@@ -412,23 +413,24 @@ body {
     }
     .blog-body {
       margin: 15px 0 20px 10px;
-      .fp-category {
+      .blog-category {
         color: $main-color;
         font-size: 14px;
       }
       .blog-title {
-        font-weight: 700;
+        font-weight: bold;
         font-size: 18px;
+        line-height: 1.2;
       }
       .blog-author {
         border-top: 1px solid #eeeeee;
-        padding: 20px;
+        padding-top: 20px;
         margin-top: 25px;
-        width: 100%;
+        color: #777777;
+        font-size: 14px;
         .blog-author-left-side {
           display: inline-block;
           .blog-author-img {
-            width: 30px;
             display: inline-block;
           }
         }

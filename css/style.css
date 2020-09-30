@@ -727,6 +727,7 @@ body #why-us .wcu-cards .wcu-cards-body p {
 }
 
 #blog .blog-card {
+  height: 100%;
   margin-top: 30px;
   background-color: #fff;
   padding: 10px;
@@ -748,21 +749,23 @@ body #why-us .wcu-cards .wcu-cards-body p {
   margin: 15px 0 20px 10px;
 }
 
-#blog .blog-card .blog-body .fp-category {
+#blog .blog-card .blog-body .blog-category {
   color: #ff5a5f;
   font-size: 14px;
 }
 
 #blog .blog-card .blog-body .blog-title {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 18px;
+  line-height: 1.2;
 }
 
 #blog .blog-card .blog-body .blog-author {
   border-top: 1px solid #eeeeee;
-  padding: 20px;
+  padding-top: 20px;
   margin-top: 25px;
-  width: 100%;
+  color: #777777;
+  font-size: 14px;
 }
 
 #blog .blog-card .blog-body .blog-author .blog-author-left-side {
@@ -770,7 +773,6 @@ body #why-us .wcu-cards .wcu-cards-body p {
 }
 
 #blog .blog-card .blog-body .blog-author .blog-author-left-side .blog-author-img {
-  width: 30px;
   display: inline-block;
 }
 
