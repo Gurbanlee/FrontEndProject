@@ -139,7 +139,7 @@ body {
 
   //////////////// FEATURED SECTION START ////////////////
   #featured {
-    background-color: #f7f7f7;
+    background-color: $section-bg;
     .fp-card {
       margin-top: 30px;
       background-color: $white;
@@ -294,7 +294,7 @@ body {
 
   //////////////// WHY US SECTION START ////////////////
   #why-us {
-    background-color: #f7f7f7;
+    background-color: $section-bg;
     .wcu-cards {
       padding: 50px 30px;
       background-color: $white;
@@ -389,3 +389,55 @@ body {
   }
 }
 //////////////// TESTIMONIALS SECTION END ////////////////
+
+//////////////// BLOG SECTION START ////////////////
+#blog {
+  height: 1000px;
+  background-color: $section-bg;
+  .blog-card {
+    margin-top: 30px;
+    background-color: $white;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    transition: all 0.3s ease;
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+    }
+    .blog-thumb {
+      img {
+        border-radius: 8px;
+      }
+    }
+    .blog-body {
+      margin: 15px 0 20px 10px;
+      .fp-category {
+        color: $main-color;
+        font-size: 14px;
+      }
+      .blog-title {
+        font-weight: 700;
+        font-size: 18px;
+      }
+      .blog-author {
+        border-top: 1px solid #eeeeee;
+        padding: 20px;
+        margin-top: 25px;
+        width: 100%;
+        .blog-author-left-side {
+          display: inline-block;
+          .blog-author-img {
+            width: 30px;
+            display: inline-block;
+          }
+        }
+        .blog-author-right-side {
+          display: inline-block;
+          margin-left: 75px;
+        }
+      }
+    }
+  }
+}
+//////////////// BLOG SECTION END ////////////////
