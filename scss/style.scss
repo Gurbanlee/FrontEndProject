@@ -341,3 +341,27 @@ body {
   }
   //////////////// WHY US SECTION END ////////////////
 }
+
+//////////////// TESTIMONIALS SECTION START ////////////////
+#testimonials {
+  position: relative;
+  height: 1000px;
+  background-color: #1d293e;
+  &:before {
+    background-image: url(../uploads/img/bg2.jpg);
+    bottom: 0;
+    content: "";
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .sections-head {
+    h3,
+    p {
+      color: $white !important;
+    }
+  }
+}
+//////////////// TESTIMONIALS SECTION END ////////////////

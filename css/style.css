@@ -676,3 +676,25 @@ body #why-us .wcu-cards .wcu-cards-body p {
   line-height: 1.7;
   font-size: 14px;
 }
+
+#testimonials {
+  position: relative;
+  height: 1000px;
+  background-color: #1d293e;
+}
+
+#testimonials:before {
+  background-image: url(../uploads/img/bg2.jpg);
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#testimonials .sections-head h3,
+#testimonials .sections-head p {
+  color: #fff !important;
+}
