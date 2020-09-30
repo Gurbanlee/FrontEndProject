@@ -779,3 +779,11 @@ body #why-us .wcu-cards .wcu-cards-body p {
   display: inline-block;
   margin-left: 75px;
 }
+
+#partner {
+  background-color: #fff;
+}
+
+#partner .partners-logo {
+  text-align: center;
+}
