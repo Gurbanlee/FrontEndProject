@@ -451,3 +451,34 @@ body {
   }
 }
 //////////////// PARTNER SECTION START ////////////////
+
+//////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
+#become-rea {
+  background-color: $main-color;
+  padding-bottom: 40px;
+  .become-rea-info {
+    color: $white;
+    h3 {
+      font-weight: bold;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+  .become-rea-reg {
+    button {
+      width: 200px;
+      height: 60px;
+      border-radius: 8px;
+      background-color: rgb(255, 120, 124);
+      border-color: rgb(255, 120, 124);
+      text-transform: capitalize;
+      &:hover {
+        background-color: $white;
+        color: $main-color;
+        border-color: $white;
+      }
+    }
+  }
+}
+//////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////

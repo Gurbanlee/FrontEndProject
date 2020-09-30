@@ -787,3 +787,35 @@ body #why-us .wcu-cards .wcu-cards-body p {
 #partner .partners-logo {
   text-align: center;
 }
+
+#become-rea {
+  background-color: #ff5a5f;
+  padding-bottom: 40px;
+}
+
+#become-rea .become-rea-info {
+  color: #fff;
+}
+
+#become-rea .become-rea-info h3 {
+  font-weight: bold;
+}
+
+#become-rea .become-rea-info p {
+  font-size: 14px;
+}
+
+#become-rea .become-rea-reg button {
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  background-color: #ff787c;
+  border-color: #ff787c;
+  text-transform: capitalize;
+}
+
+#become-rea .become-rea-reg button:hover {
+  background-color: #fff;
+  color: #ff5a5f;
+  border-color: #fff;
+}
