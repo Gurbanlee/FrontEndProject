@@ -819,3 +819,110 @@ body #why-us .wcu-cards .wcu-cards-body p {
   color: #ff5a5f;
   border-color: #fff;
 }
+
+#footer-up {
+  background-color: #24324a;
+  color: #8a99b3;
+  font-size: 14px;
+}
+
+#footer-up .footer-up-side h3 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+#footer-up .footer-up-side p {
+  line-height: 2.1;
+  margin-bottom: 5px;
+}
+
+#footer-up .footer-up-side ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#footer-up .footer-up-side ul li {
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+#footer-up .footer-up-side a {
+  color: #8a99b3;
+}
+
+#footer-up .footer-up-side a:hover {
+  color: #fff;
+}
+
+#footer-up .footer-up-side .footer-up-social {
+  margin-bottom: 30px;
+}
+
+#footer-up .footer-up-side .footer-up-social a {
+  margin-left: 25px;
+}
+
+#footer-up .footer-up-side .footer-up-social a:first-child {
+  margin-left: 0;
+}
+
+#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp {
+  position: relative;
+}
+
+#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp input {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: #354765;
+  border: 1px solid #354765;
+  padding-left: 30px;
+}
+
+#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .form-control {
+  display: inline-block;
+}
+
+#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button {
+  display: inline-block;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #354765;
+}
+
+#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button i {
+  line-height: 3.5;
+}
+
+#footer-down {
+  background-color: #1d293e;
+  color: #8a99b3;
+  font-size: 14px;
+}
+
+#footer-down .footer-down-list ul {
+  list-style-type: none;
+}
+
+#footer-down .footer-down-list ul li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+#footer-down .footer-down-list ul li:first-child {
+  margin-left: 0;
+}
+
+#footer-down .footer-down-list ul li a {
+  text-transform: capitalize;
+  color: #8a99b3;
+}
+
+#footer-down .footer-down-list ul li a:hover {
+  color: #fff;
+}

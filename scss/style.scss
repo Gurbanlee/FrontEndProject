@@ -482,3 +482,101 @@ body {
   }
 }
 //////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
+
+//////////////// FOOTER UP SECTION START ////////////////
+#footer-up {
+  background-color: #24324a;
+  color: #8a99b3;
+  font-size: 14px;
+  .footer-up-side {
+    h3 {
+      color: $white;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+    }
+    p {
+      line-height: 2.1;
+      margin-bottom: 5px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      li {
+        margin-bottom: 10px;
+        text-transform: capitalize;
+      }
+    }
+    a {
+      color: #8a99b3;
+      &:hover {
+        color: $white;
+      }
+    }
+    .footer-up-social {
+      margin-bottom: 30px;
+      a {
+        margin-left: 25px;
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+    }
+    .footer-up-subs {
+      .footer-up-subs-inp {
+        position: relative;
+        input {
+          width: 200px;
+          height: 50px;
+          border-radius: 50px;
+          background-color: #354765;
+          border: 1px solid #354765;
+          padding-left: 30px;
+        }
+        .form-control {
+          display: inline-block;
+        }
+        .fas-button {
+          display: inline-block;
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          background-color: #354765;
+          i {
+            line-height: 3.5;
+          }
+        }
+      }
+    }
+  }
+}
+//////////////// FOOTER UP SECTION END ////////////////
+
+//////////////// FOOTER DOWN SECTION END ////////////////
+#footer-down {
+  background-color: #1d293e;
+  color: #8a99b3;
+  font-size: 14px;
+  .footer-down-list {
+    ul {
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin-left: 40px;
+        &:first-child {
+          margin-left: 0;
+        }
+        a {
+          text-transform: capitalize;
+          color: #8a99b3;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+//////////////// FOOTER DOWN SECTION END ////////////////
