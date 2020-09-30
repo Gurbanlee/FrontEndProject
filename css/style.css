@@ -281,7 +281,6 @@ body #featured .fp-card .fp-body .fp-author .fp-author-right-side {
 
 body #find-properties {
   background-color: #fff;
-  height: 1000px;
 }
 
 body #find-properties .findp-post {
@@ -324,4 +323,9 @@ body #find-properties .findp-post .overlay .findp-title {
 
 body #find-properties .findp-post .overlay .findp-title h5 {
   font-weight: 800;
+}
+
+body #why-us {
+  background-color: #f7f7f7;
+  height: 1000px;
 }
