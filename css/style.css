@@ -13,6 +13,17 @@ body section {
   padding: 60px 0;
 }
 
+body section .sections-head h3 {
+  font-weight: 800;
+  text-transform: capitalize;
+  font-size: 2rem;
+}
+
+body section .sections-head p {
+  color: #777777;
+  letter-spacing: 1px;
+}
+
 body .col-half-offset {
   margin-left: 4.166666667%;
 }
@@ -142,17 +153,6 @@ body #featured {
   background-color: #f7f7f7;
 }
 
-body #featured h3 {
-  font-weight: 800;
-  text-transform: capitalize;
-  font-size: 2rem;
-}
-
-body #featured p {
-  color: #777777;
-  letter-spacing: 1px;
-}
-
 body #featured .fp-card {
   margin-top: 30px;
   background-color: #fff;
@@ -277,4 +277,9 @@ body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img 
 body #featured .fp-card .fp-body .fp-author .fp-author-right-side {
   display: inline-block;
   margin-left: 75px;
+}
+
+body #find-properties {
+  background-color: #fff;
+  height: 1000px;
 }
