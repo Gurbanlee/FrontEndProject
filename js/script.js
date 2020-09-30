@@ -1,6 +1,5 @@
-// OWLCAROUSEL START
-
 $(document).ready(function () {
+  // OWLCAROUSEL START
   $(".owl-one").owlCarousel({
     loop: true,
     margin: 10,
@@ -35,5 +34,10 @@ $(document).ready(function () {
       },
     },
   });
+  // OWLCAROUSEL END
+
+  let dropDown = $(".fh-dropdown");
+  $(dropDown).click(function (e) {
+    $(this).find("div").removeClass("d-none");
+  });
 });
-// OWLCAROUSEL END
