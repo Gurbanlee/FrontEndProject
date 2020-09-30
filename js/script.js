@@ -36,8 +36,7 @@ $(document).ready(function () {
   });
   // OWLCAROUSEL END
 
-  let dropDown = $(".fh-dropdown");
-  $(dropDown).click(function (e) {
-    $(this).find("div").removeClass("d-none");
+  $(".fh-dropdown").click(function () {
+    $(".fh-dpd").removeClass("d-none");
   });
 });
