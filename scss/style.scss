@@ -345,8 +345,8 @@ body {
 //////////////// TESTIMONIALS SECTION START ////////////////
 #testimonials {
   position: relative;
-  height: 1000px;
   background-color: #1d293e;
+  color: $white;
   &:before {
     background-image: url(../uploads/img/bg2.jpg);
     bottom: 0;
@@ -361,6 +361,30 @@ body {
     h3,
     p {
       color: $white !important;
+    }
+  }
+  .testi-card {
+    .testi-card-thumb {
+      img {
+        border: 10px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        display: inline;
+        height: 115px;
+        width: 115px;
+      }
+    }
+    .testi-card-body {
+      .testi-card-body-header {
+        line-height: 0.5;
+        text-transform: capitalize;
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+    .testi-card-body-desc {
+      font-size: 14px;
+      line-height: 1.4;
     }
   }
 }

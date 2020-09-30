@@ -1,26 +1,46 @@
 // OWLCAROUSEL START
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  $(".owl-one").owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
     responsive: {
       0: {
         items: 1,
-        nav: true
+        nav: true,
       },
       600: {
         items: 3,
-        nav: false
+        nav: false,
       },
       1000: {
         items: 3,
         nav: true,
-        loop: false
-      }
-    }
+        loop: false,
+      },
+    },
+  });
+
+  $(".owl-two").owlCarousel({
+    loop: true,
+    margin: 10,
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+        nav: true,
+      },
+      600: {
+        items: 1,
+        nav: false,
+      },
+      1000: {
+        items: 1,
+        nav: true,
+        loop: false,
+      },
+    },
   });
 });
-
 // OWLCAROUSEL END

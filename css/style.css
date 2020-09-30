@@ -679,8 +679,8 @@ body #why-us .wcu-cards .wcu-cards-body p {
 
 #testimonials {
   position: relative;
-  height: 1000px;
   background-color: #1d293e;
+  color: #fff;
 }
 
 #testimonials:before {
@@ -697,4 +697,26 @@ body #why-us .wcu-cards .wcu-cards-body p {
 #testimonials .sections-head h3,
 #testimonials .sections-head p {
   color: #fff !important;
+}
+
+#testimonials .testi-card .testi-card-thumb img {
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  display: inline;
+  height: 115px;
+  width: 115px;
+}
+
+#testimonials .testi-card .testi-card-body .testi-card-body-header {
+  line-height: 0.5;
+  text-transform: capitalize;
+}
+
+#testimonials .testi-card .testi-card-body .testi-card-body-header p {
+  font-size: 14px;
+}
+
+#testimonials .testi-card .testi-card-body-desc {
+  font-size: 14px;
+  line-height: 1.4;
 }
