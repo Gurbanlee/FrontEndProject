@@ -250,6 +250,45 @@ body {
   #find-properties {
     background-color: $white;
     height: 1000px;
+    .findp-post {
+      position: relative;
+      transition: all 0.6s ease;
+      &:hover {
+        transform: scale(1.1) rotate(-1deg);
+        transition: all 0.6s ease;
+        cursor: pointer;
+      }
+      .findp-thumb {
+        overflow: hidden;
+        img {
+          transition: all 0.6s ease;
+        }
+      }
+      .overlay {
+        background: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 0.01) 0%,
+          rgba(29, 41, 62, 1) 100%
+        );
+        border-radius: 0px 0px 10px 10px;
+        bottom: 0;
+        height: 244px;
+        left: 0;
+        position: absolute;
+        right: 0;
+        text-align: center;
+        .findp-title {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          color: $white;
+          h5 {
+            font-weight: 800;
+          }
+        }
+      }
+    }
   }
   //////////////// FIND PROPERTIES SECTION END ////////////////
 }
