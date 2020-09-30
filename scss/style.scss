@@ -227,6 +227,17 @@ body {
           padding: 20px;
           margin-top: 25px;
           width: 100%;
+          .fp-author-left-side {
+            display: inline-block;
+            .fp-author-img {
+              width: 30px;
+              display: inline-block;
+            }
+          }
+          .fp-author-right-side {
+            display: inline-block;
+            margin-left: 75px;
+          }
         }
       }
     }

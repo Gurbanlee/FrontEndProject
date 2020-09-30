@@ -264,4 +264,17 @@ body #featured .fp-card .fp-body .fp-author {
   margin-top: 25px;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+
+body #featured .fp-card .fp-body .fp-author .fp-author-left-side {
+  display: inline-block;
+}
+
+body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
+  width: 30px;
+  display: inline-block;
+}
+
+body #featured .fp-card .fp-body .fp-author .fp-author-right-side {
+  display: inline-block;
+  margin-left: 75px;
+}

@@ -1,432 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindHouse - Real Estate</title>
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FindHouse - Real Estate</title>
-  <link rel="stylesheet" href="css/owl.carousel.min.css">
-  <link rel="stylesheet" href="css/owl.theme.default.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-</head>
+  <body>
+    <!-- START SECTION END -->
+    <header>
+      <section id="header-info">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img
+              src="uploads/img/logo.png"
+              class="img-fluid d-inline-block align-top"
+              alt="logo"
+              width="30"
+              height="30"
+            />
+            FindHouse
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <!-- START SECTION END -->
-  <header>
-    <section id="header-info">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#">
-          <img src="uploads/img/logo.png" class="img-fluid d-inline-block align-top" alt="logo" width="30"
-            height="30" />
-          FindHouse
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Listing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Property</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Listing</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Property</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Pages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="find-home text-center">
+                <div class="fh-about">
+                  <h1>find your dream home</h1>
+                  <h5>
+                    From as low as $10 per day with limited time offer
+                    discounts.
+                  </h5>
+                </div>
+                <div class="fh-pills">
+                  <ul class="nav-pills">
+                    <li class="active">
+                      <a data-toggle="pill" href="#buy">Buy</a>
+                    </li>
+                    <li><a data-toggle="pill" href="#rent">Rent</a></li>
+                  </ul>
 
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="find-home text-center">
-              <div class="fh-about">
-                <h1>find your dream home</h1>
-                <h5>
-                  From as low as $10 per day with limited time offer
-                  discounts.
-                </h5>
-              </div>
-              <div class="fh-pills">
-                <ul class="nav-pills">
-                  <li class="active"><a data-toggle="pill" href="#buy">Buy</a></li>
-                  <li><a data-toggle="pill" href="#rent">Rent</a></li>
-                </ul>
-
-                <div class="tab-content">
-                  <div id="buy" class="tab-pane fade in active show">
-                    <div class="fh-search text-left">
-                      <div class="fh-search-body">
-                        <input type="text" class="form-control" placeholder="Enter keyword...">
-                        <select class="form-control">
-                          <option disabled selected>Property type</option>
-                          <option>Apartment</option>
-                          <option>Bungalow</option>
-                          <option>Condo</option>
-                          <option>House</option>
-                          <option>Land</option>
-                          <option>Single Family</option>
-                        </select>
-                        <div class="fh-search-location">
-                          <input type="text" class="form-control" placeholder="Location"><i
-                            class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <input type="number" class="form-control" placeholder="Price">
-                        <span class="fh-dropdown ml-3">
-                          Advanced
-                          <i class="ml-3 fas fa-ellipsis-v"></i>
-                          <div class="fh-dpd d-none">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <h2>
-                                  Amenities
-                                </h2>
-                              </div>
-                              <div class="col-lg-2">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    air conditioning
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    lawn
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    swimming pool
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    barbeque
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    microwave
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    TV cable
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    dryer
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    outdoor shower
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    washer
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    gym
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    refrigerator
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    wiFi
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    laundry
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    sauna
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    window coverings
-                                  </label>
-                                </div>
-                              </div>
+                  <div class="tab-content">
+                    <div id="buy" class="tab-pane fade in active show">
+                      <div class="fh-search text-left">
+                        <div class="fh-search-body">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter keyword..."
+                          />
+                          <select class="form-control">
+                            <option disabled selected>Property type</option>
+                            <option>Apartment</option>
+                            <option>Bungalow</option>
+                            <option>Condo</option>
+                            <option>House</option>
+                            <option>Land</option>
+                            <option>Single Family</option>
+                          </select>
+                          <div class="fh-search-location">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Location"
+                            /><i class="fas fa-map-marker-alt"></i>
+                          </div>
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Price"
+                          />
+                          <span class="fh-dropdown ml-3">
+                            Advanced
+                            <i class="ml-3 fas fa-ellipsis-v"></i>
+                            <div class="fh-dpd d-none">
                               <div class="row">
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Bathrooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                  </select>
+                                <div class="col-lg-12">
+                                  <h2>Amenities</h2>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Bedrooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                  </select>
+                                <div class="col-lg-2">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      air conditioning
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      lawn
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      swimming pool
+                                    </label>
+                                  </div>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Year built</option>
-                                    <option>2015</option>
-                                    <option>2016</option>
-                                    <option>2017</option>
-                                    <option>2018</option>
-                                    <option>2019</option>
-                                    <option>2020</option>
-                                  </select>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      barbeque
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      microwave
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      TV cable
+                                    </label>
+                                  </div>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Built-up Area</option>
-                                    <option>Adana</option>
-                                    <option>Ankara</option>
-                                    <option>Antalya</option>
-                                    <option>Bursa</option>
-                                    <option>Bodrum</option>
-                                    <option>Istanbul</option>
-                                  </select>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      dryer
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      outdoor shower
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      washer
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      gym
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      refrigerator
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      wiFi
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      laundry
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      sauna
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      window coverings
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Bathrooms
+                                      </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Bedrooms
+                                      </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Year built
+                                      </option>
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Built-up Area
+                                      </option>
+                                      <option>Adana</option>
+                                      <option>Ankara</option>
+                                      <option>Antalya</option>
+                                      <option>Bursa</option>
+                                      <option>Bodrum</option>
+                                      <option>Istanbul</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </span>
-                        <button type="button" class="btn btn-primary">Search</button>
+                          </span>
+                          <button type="button" class="btn btn-primary">
+                            Search
+                          </button>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <div id="rent" class="tab-pane fade in">
-                    <div class="fh-search text-left">
-                      <div class="fh-search-body">
-                        <input type="text" class="form-control" placeholder="Enter keyword...">
-                        <select class="form-control">
-                          <option disabled selected>Property type</option>
-                          <option>Apartment</option>
-                          <option>Bungalow</option>
-                          <option>Condo</option>
-                          <option>House</option>
-                          <option>Land</option>
-                          <option>Single Family</option>
-                        </select>
-                        <div class="fh-search-location">
-                          <input type="text" class="form-control" placeholder="Location"><i
-                            class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <input type="number" class="form-control" placeholder="Price">
-                        <span class="fh-dropdown ml-3">
-                          Advanced
-                          <i class="ml-3 fas fa-ellipsis-v"></i>
-                          <div class="fh-dpd d-none">
-                            <div class="row">
-                              <div class="col-lg-12">
-                                <h2>
-                                  Amenities
-                                </h2>
-                              </div>
-                              <div class="col-lg-2">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    air conditioning
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    lawn
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    swimming pool
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    barbeque
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    microwave
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    TV cable
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    dryer
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    outdoor shower
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    washer
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    gym
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    refrigerator
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    wiFi
-                                  </label>
-                                </div>
-                              </div>
-                              <div class="col-lg-2 col-half-offset">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    laundry
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    sauna
-                                  </label>
-                                </div>
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                                  <label class="form-check-label" for="defaultCheck1">
-                                    window coverings
-                                  </label>
-                                </div>
-                              </div>
+                    <div id="rent" class="tab-pane fade in">
+                      <div class="fh-search text-left">
+                        <div class="fh-search-body">
+                          <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Enter keyword..."
+                          />
+                          <select class="form-control">
+                            <option disabled selected>Property type</option>
+                            <option>Apartment</option>
+                            <option>Bungalow</option>
+                            <option>Condo</option>
+                            <option>House</option>
+                            <option>Land</option>
+                            <option>Single Family</option>
+                          </select>
+                          <div class="fh-search-location">
+                            <input
+                              type="text"
+                              class="form-control"
+                              placeholder="Location"
+                            /><i class="fas fa-map-marker-alt"></i>
+                          </div>
+                          <input
+                            type="number"
+                            class="form-control"
+                            placeholder="Price"
+                          />
+                          <span class="fh-dropdown ml-3">
+                            Advanced
+                            <i class="ml-3 fas fa-ellipsis-v"></i>
+                            <div class="fh-dpd d-none">
                               <div class="row">
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Bathrooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                  </select>
+                                <div class="col-lg-12">
+                                  <h2>Amenities</h2>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Bedrooms</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
-                                    <option>5</option>
-                                    <option>6</option>
-                                  </select>
+                                <div class="col-lg-2">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      air conditioning
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      lawn
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      swimming pool
+                                    </label>
+                                  </div>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Year built</option>
-                                    <option>2015</option>
-                                    <option>2016</option>
-                                    <option>2017</option>
-                                    <option>2018</option>
-                                    <option>2019</option>
-                                    <option>2020</option>
-                                  </select>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      barbeque
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      microwave
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      TV cable
+                                    </label>
+                                  </div>
                                 </div>
-                                <div class="col-lg-3">
-                                  <select class="form-control">
-                                    <option disabled selected>Built-up Area</option>
-                                    <option>Adana</option>
-                                    <option>Ankara</option>
-                                    <option>Antalya</option>
-                                    <option>Bursa</option>
-                                    <option>Bodrum</option>
-                                    <option>Istanbul</option>
-                                  </select>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      dryer
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      outdoor shower
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      washer
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      gym
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      refrigerator
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      wiFi
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-lg-2 col-half-offset">
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      laundry
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      sauna
+                                    </label>
+                                  </div>
+                                  <div class="form-check">
+                                    <input
+                                      class="form-check-input"
+                                      type="checkbox"
+                                      value=""
+                                      id="defaultCheck1"
+                                    />
+                                    <label
+                                      class="form-check-label"
+                                      for="defaultCheck1"
+                                    >
+                                      window coverings
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Bathrooms
+                                      </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Bedrooms
+                                      </option>
+                                      <option>1</option>
+                                      <option>2</option>
+                                      <option>3</option>
+                                      <option>4</option>
+                                      <option>5</option>
+                                      <option>6</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Year built
+                                      </option>
+                                      <option>2015</option>
+                                      <option>2016</option>
+                                      <option>2017</option>
+                                      <option>2018</option>
+                                      <option>2019</option>
+                                      <option>2020</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-lg-3">
+                                    <select class="form-control">
+                                      <option disabled selected>
+                                        Built-up Area
+                                      </option>
+                                      <option>Adana</option>
+                                      <option>Ankara</option>
+                                      <option>Antalya</option>
+                                      <option>Bursa</option>
+                                      <option>Bodrum</option>
+                                      <option>Istanbul</option>
+                                    </select>
+                                  </div>
                                 </div>
                               </div>
                             </div>
-                          </div>
-                        </span>
-                        <button type="button" class="btn btn-primary ml-1">Search</button>
+                          </span>
+                          <button type="button" class="btn btn-primary ml-1">
+                            Search
+                          </button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -435,272 +730,386 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
-  </header>
-  <!-- HEADER SECTION END -->
+      </section>
+    </header>
+    <!-- HEADER SECTION END -->
 
-  <!-- MAIN SECTION START -->
-  <main>
-    <section id="featured">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="text-center">
-              <h3>featured properties</h3>
-              <p>Handpicked properties by our team.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="owl-carousel owl-theme">
-            <div class="col-12">
-              <div class="fp-card">
-                <div class="fp-thumb">
-                  <img src="uploads/img/fp1.jpg" class="img-fluid" alt="fp1">
-                  <span class="red-con">
-                    featured
-                  </span>
-                  <div class="fp-on-thumb">
-                    <div class="fp-left-side">
-                      <span class="fp-price">$13,000</span><span class="text-muted">/mo</span>
-                    </div>
-                    <div class="fp-right-side">
-                      <span class="fp-black-bg">
-                        <i class="fas fa-exchange-alt"></i>
-                      </span>
-                      <span class="fp-black-bg">
-                        <i class="far fa-heart"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="fp-body">
-                  <span class="fp-category">
-                    Apartment
-                  </span>
-                  <h5 class="fp-title">
-                    Renovated Apartment
-                  </h5>
-                  <p class="fp-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    1421 San Pedro St, Los Angeles, CA 90015
-                  </p>
-                  <div class="fp-about">
-                    <span class="fp-about-bed">
-                      Beds: 4
-                    </span>
-                    <span class="fp-about-baths">
-                      Baths: 2
-                    </span>
-                    <span>
-                      Sq Ft: 5280
-                    </span>
-                  </div>
-                  <div class="fp-author">
-                    <div class="fp-author-left-side">
-                      <img src="uploads/img/pposter1.png" class="img-fluid" width="40px" height="40px" alt="pposter1">
-                      <span class="fp-author-name">
-                        Ali Tufan
-                      </span>
-                    </div>
-                    <div class="fp-author-right-side">
-                      <p>4 years ago</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="fp-card">
-                <div class="fp-thumb">
-                  <img src="uploads/img/fp1.jpg" class="img-fluid" alt="fp1">
-                  <div class="fp-on-thumb">
-                    <span class="red-con">
-                      featured
-                    </span>
-                    <div class="fp-left-side">
-                      <span class="fp-price">$13,000</span><span>/mo</span>
-                    </div>
-                    <div class="fp right-side">
-                      <span class="fp-black-bg">
-                        <i class="fas fa-exchange-alt"></i>
-                      </span>
-                      <span class="fp-black bg">
-                        <i class="far fa-heart"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="fp-body">
-                  <span class="fp-category">
-                    Apartment
-                  </span>
-                  <h5 class="fp-title">
-                    Renovated Apartment
-                  </h5>
-                  <p class="fp-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    1421 San Pedro St, Los Angeles, CA 90015
-                  </p>
-                  <div class="fp-about">
-                    <span class="fp-about-bed">
-                      Beds: 4
-                    </span>
-                    <span class="fp-about-baths">
-                      Baths: 2
-                    </span>
-                    <span class="fp-about-sqft">
-                      Sq Ft: 5280
-                    </span>
-                  </div>
-                  <div class="fp-author">
-                    <div class="fp-author-left-side">
-                      <img src="uploads/img/pposter1.png" class="img-fluid" alt="pposter1">
-                      <span class="fp-author-name">
-                        Ali Tufan
-                      </span>
-                    </div>
-                    <div class="fp-author-right-side">
-                      <p>4 years ago</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="fp-card">
-                <div class="fp-thumb">
-                  <img src="uploads/img/fp1.jpg" class="img-fluid" alt="fp1">
-                  <div class="fp-on-thumb">
-                    <span class="red-con">
-                      featured
-                    </span>
-                    <div class="fp-left-side">
-                      <span class="fp-price">$13,000</span><span>/mo</span>
-                    </div>
-                    <div class="fp right-side">
-                      <span class="fp-black-bg">
-                        <i class="fas fa-exchange-alt"></i>
-                      </span>
-                      <span class="fp-black bg">
-                        <i class="far fa-heart"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="fp-body">
-                  <span class="fp-category">
-                    Apartment
-                  </span>
-                  <h5 class="fp-title">
-                    Renovated Apartment
-                  </h5>
-                  <p class="fp-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    1421 San Pedro St, Los Angeles, CA 90015
-                  </p>
-                  <div class="fp-about">
-                    <span class="fp-about-bed">
-                      Beds: 4
-                    </span>
-                    <span class="fp-about-baths">
-                      Baths: 2
-                    </span>
-                    <span class="fp-about-sqft">
-                      Sq Ft: 5280
-                    </span>
-                  </div>
-                  <div class="fp-author">
-                    <div class="fp-author-left-side">
-                      <img src="uploads/img/pposter1.png" class="img-fluid" alt="pposter1">
-                      <span class="fp-author-name">
-                        Ali Tufan
-                      </span>
-                    </div>
-                    <div class="fp-author-right-side">
-                      <p>4 years ago</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-12">
-              <div class="fp-card">
-                <div class="fp-thumb">
-                  <img src="uploads/img/fp1.jpg" class="img-fluid" alt="fp1">
-                  <div class="fp-on-thumb">
-                    <span class="red-con">
-                      featured
-                    </span>
-                    <div class="fp-left-side">
-                      <span class="fp-price">$13,000</span><span>/mo</span>
-                    </div>
-                    <div class="fp right-side">
-                      <span class="fp-black-bg">
-                        <i class="fas fa-exchange-alt"></i>
-                      </span>
-                      <span class="fp-black bg">
-                        <i class="far fa-heart"></i>
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="fp-body">
-                  <span class="fp-category">
-                    Apartment
-                  </span>
-                  <h5 class="fp-title">
-                    Renovated Apartment
-                  </h5>
-                  <p class="fp-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    1421 San Pedro St, Los Angeles, CA 90015
-                  </p>
-                  <div class="fp-about">
-                    <span class="fp-about-bed">
-                      Beds: 4
-                    </span>
-                    <span class="fp-about-baths">
-                      Baths: 2
-                    </span>
-                    <span class="fp-about-sqft">
-                      Sq Ft: 5280
-                    </span>
-                  </div>
-                  <div class="fp-author">
-                    <div class="fp-author-left-side">
-                      <img src="uploads/img/pposter1.png" class="img-fluid" alt="pposter1">
-                      <span class="fp-author-name">
-                        Ali Tufan
-                      </span>
-                    </div>
-                    <div class="fp-author-right-side">
-                      <p>4 years ago</p>
-                    </div>
-                  </div>
-                </div>
+    <!-- MAIN SECTION START -->
+    <main>
+      <section id="featured">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="text-center">
+                <h3>featured properties</h3>
+                <p>Handpicked properties by our team.</p>
               </div>
             </div>
           </div>
+          <div class="row">
+            <div class="owl-carousel owl-theme">
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="fp-card">
+                  <div class="fp-thumb">
+                    <img
+                      src="uploads/img/fp1.jpg"
+                      class="img-fluid"
+                      alt="fp1"
+                    />
+                    <span class="red-con"> featured </span>
+                    <div class="fp-on-thumb">
+                      <div class="fp-left-side">
+                        <span class="fp-price">$13,000</span
+                        ><span class="text-muted">/mo</span>
+                      </div>
+                      <div class="fp-right-side">
+                        <span class="fp-black-bg">
+                          <i class="fas fa-exchange-alt"></i>
+                        </span>
+                        <span class="fp-black-bg">
+                          <i class="far fa-heart"></i>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="fp-body">
+                    <span class="fp-category"> Apartment </span>
+                    <h5 class="fp-title">Renovated Apartment</h5>
+                    <p class="fp-address">
+                      <i class="fas fa-map-marker-alt"></i>
+                      1421 San Pedro St, Los Angeles, CA 90015
+                    </p>
+                    <div class="fp-about">
+                      <span class="fp-about-bed"> Beds: 4 </span>
+                      <span class="fp-about-baths"> Baths: 2 </span>
+                      <span> Sq Ft: 5280 </span>
+                    </div>
+                    <div class="fp-author">
+                      <div class="fp-author-left-side">
+                        <div class="fp-author-img">
+                          <img src="uploads/img/pposter1.png" alt="pposter1" />
+                        </div>
+                        <span class="fp-author-name"> Ali Tufan </span>
+                      </div>
+                      <div class="fp-author-right-side">
+                        <p>4 years ago</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <!-- MAIN SECTION END -->
+      </section>
+    </main>
+    <!-- MAIN SECTION END -->
 
-
-
-
-  <script src="https://kit.fontawesome.com/9176eba334.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="js/plugins/owl.carousel.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="https://kit.fontawesome.com/9176eba334.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/plugins/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
