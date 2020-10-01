@@ -384,6 +384,54 @@ body #header-info .find-home .fh-pills ul .active {
   background-color: #ff5a5f;
 }
 
+body #header-info .find-home .fh-pills .tab-content {
+  position: relative;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
+  right: 0;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+  padding: 30px;
+  color: #4f4f4f;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd h2 {
+  color: #006c70;
+  font-size: 18px;
+  text-align: left;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd .form-check {
+  margin-bottom: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd .form-check .form-check-input {
+  border: 1px solid #dddddd;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd select {
+  width: 190px;
+  height: 50px;
+  color: #4f4f4f;
+  font-size: 14px;
+  border: 1px solid #ebebeb;
+  line-height: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+body #header-info .find-home .fh-pills .tab-content .fh-dpd button {
+  color: #ff5a5f;
+  font-weight: bold;
+}
+
 body #header-info .find-home .fh-pills .tab-content .fh-search {
   background-color: #fff;
   border: 5px solid rgba(255, 255, 255, 0.15);
@@ -438,44 +486,6 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
   background-color: #fff;
   border: 2px solid #ff5a5f;
   color: #ff5a5f;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dpd {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0px 0px 50px 0px rgba(32, 32, 32, 0.15);
-  right: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  padding: 30px;
-  color: #4f4f4f;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dpd .dropdwn-head {
-  color: #006c70;
-  font-size: 18px;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dpd .form-check {
-  margin-bottom: 30px;
-  font-size: 14px;
-  text-transform: capitalize;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dpd .form-check .form-check-input {
-  border: 1px solid #dddddd;
-}
-
-body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .fh-dpd select {
-  width: 190px;
-  height: 50px;
-  color: #4f4f4f;
-  font-size: 14px;
-  border: 1px solid #ebebeb;
-  line-height: 40px;
-  background-color: #fff;
-  border-radius: 8px;
 }
 
 body #featured {
