@@ -39,4 +39,8 @@ $(document).ready(function () {
   $(".fh-dropdown").click(function () {
     $(".fh-dpd").removeClass("d-none");
   });
+
+  $("#hide-dropdown").click(function () {
+    $(".fh-dpd").addClass("d-none");
+  });
 });
