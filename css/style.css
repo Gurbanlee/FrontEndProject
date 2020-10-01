@@ -714,7 +714,9 @@ body #why-us .wcu-cards:hover .wcu-cards-icon {
   background-color: #ff5a5f;
 }
 
-body #why-us .wcu-cards:hover .wcu-cards-icon .flaticon-high-five {
+body #why-us .wcu-cards:hover .wcu-cards-icon .flaticon-high-five,
+body #why-us .wcu-cards:hover .wcu-cards-icon .flaticon-home-1,
+body #why-us .wcu-cards:hover .wcu-cards-icon .flaticon-profit {
   color: #fff;
 }
 
