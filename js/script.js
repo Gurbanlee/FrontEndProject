@@ -43,4 +43,9 @@ $(document).ready(function () {
   $("#hide-dropdown").click(function () {
     $(".fh-dpd").addClass("d-none");
   });
+
+  $("#top").click(function () {
+    $("body").animate({ scrollTop: 50 }, "slow");
+    return false;
+  });
 });
