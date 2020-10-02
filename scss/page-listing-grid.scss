@@ -69,7 +69,7 @@ body {
 
 #listing {
   background-color: #f7f7f7;
-  height: 1000px;
+  height: 2000px;
   .breadcrumb {
     background-color: transparent;
     .active {
@@ -77,6 +77,34 @@ body {
     }
     a {
       color: #555555;
+    }
+  }
+  .sidebar {
+    background-color: $white;
+    border-radius: 8px;
+    padding: 40px;
+    font-size: 14px;
+    .sidebar-content {
+      .sidebar-item {
+        #keyword,
+        #location {
+          position: relative;
+          i {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            color: #555555;
+          }
+        }
+        input,
+        select {
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid rgb(235, 235, 235);
+          line-height: 1.2;
+          padding-left: 20px;
+        }
+      }
     }
   }
 }

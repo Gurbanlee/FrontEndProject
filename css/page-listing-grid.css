@@ -362,7 +362,7 @@ body h6 {
 
 #listing {
   background-color: #f7f7f7;
-  height: 1000px;
+  height: 2000px;
 }
 
 #listing .breadcrumb {
@@ -375,4 +375,33 @@ body h6 {
 
 #listing .breadcrumb a {
   color: #555555;
+}
+
+#listing .sidebar {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  font-size: 14px;
+}
+
+#listing .sidebar .sidebar-content .sidebar-item #keyword,
+#listing .sidebar .sidebar-content .sidebar-item #location {
+  position: relative;
+}
+
+#listing .sidebar .sidebar-content .sidebar-item #keyword i,
+#listing .sidebar .sidebar-content .sidebar-item #location i {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  color: #555555;
+}
+
+#listing .sidebar .sidebar-content .sidebar-item input,
+#listing .sidebar .sidebar-content .sidebar-item select {
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ebebeb;
+  line-height: 1.2;
+  padding-left: 20px;
 }
