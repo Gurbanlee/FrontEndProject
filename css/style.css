@@ -324,12 +324,6 @@ body .col-half-offset {
   margin-left: 4.166666667%;
 }
 
-body #top {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-}
-
 body .owl-one .owl-dots .owl-dot,
 body .owl-two .owl-dots .owl-dot {
   background-color: transparent;
