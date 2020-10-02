@@ -32,7 +32,8 @@ body {
 
   ////////////// OWL SETTINGS //////////////
   .owl-one,
-  .owl-two {
+  .owl-two,
+  .owl-sidebar {
     .owl-dots {
       .owl-dot {
         background-color: transparent;
@@ -721,7 +722,6 @@ body {
 
   #listing {
     background-color: #f7f7f7;
-    height: 2000px;
     .breadcrumb {
       background-color: transparent;
       .active {
@@ -894,6 +894,188 @@ body {
             background-color: $main-color;
             color: $white;
           }
+        }
+      }
+    }
+  }
+}
+
+#page-listing-agent {
+  color: #484848;
+  #page-head {
+    padding: 10px 0;
+    nav {
+      .navbar-brand {
+        span {
+          line-height: 1.8;
+          font-weight: bold;
+          font-size: 28px;
+          margin-left: 10px;
+        }
+      }
+      ul {
+        li {
+          margin-right: 30px;
+          &:nth-child(6) {
+            margin-right: 0;
+          }
+          a {
+            color: #484848;
+          }
+          button {
+            font-size: 16px;
+            background-color: $main-color;
+            border-color: $main-color;
+            color: $white;
+            width: 180px;
+            height: 50px;
+            border-radius: 25px;
+            text-transform: capitalize;
+          }
+        }
+        .nav-login {
+          position: relative;
+          &::before {
+            background-color: #e8eef2;
+            content: "";
+            height: 38px;
+            left: -5px;
+            position: absolute;
+            right: 0;
+            width: 1px;
+            margin-left: 5px;
+          }
+          .flaticon-user {
+            &::before {
+              padding-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #agent-list {
+    background-color: #f7f7f7;
+    .breadcrumb {
+      background-color: transparent;
+      .active {
+        color: $main-color;
+      }
+      a {
+        color: #555555;
+      }
+    }
+    .change-view {
+      .change-view-grid,
+      .change-view-list {
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        background-color: $white;
+        border-radius: 8px;
+        text-align: center;
+        line-height: 3;
+        margin-right: 10px;
+        transition: all 0.3s ease;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          background-color: rgb(227, 227, 227);
+          cursor: pointer;
+        }
+      }
+    }
+
+    .sidebar {
+      background-color: $white;
+      border: 1px solid rgb(235, 235, 235);
+      border-radius: 8px;
+      padding: 30px 25px;
+      font-size: 14px;
+      margin-bottom: 30px;
+
+      .sidebar-content {
+        .sidebar-title {
+          margin-bottom: 25px;
+        }
+        input,
+        select {
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid rgb(235, 235, 235);
+          line-height: 1.2;
+          padding-left: 20px;
+        }
+        i {
+          margin-right: 10px;
+          color: #555555;
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          margin-top: 20px;
+          background-color: $main-color;
+          border-color: $main-color;
+          &:hover {
+            background-color: $white;
+            border: 2px solid $main-color;
+            color: $main-color;
+          }
+        }
+      }
+      .sidebar-thumb {
+        position: relative;
+        padding: 10px;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+        &:hover {
+          cursor: pointer;
+          box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+        }
+        img {
+          border-radius: 8px;
+        }
+        .sidebar-for-rent,
+        .sidebar-featured {
+          position: absolute;
+          text-transform: capitalize;
+          padding: 2px 13px;
+          border-radius: 5px;
+          color: $white;
+        }
+        .sidebar-for-rent {
+          top: 20px;
+          left: 20px;
+          background-color: #3e4c66;
+        }
+        .sidebar-featured {
+          top: 20px;
+          left: 110px;
+          background-color: $main-color;
+        }
+        .sidebar-price {
+          position: absolute;
+          color: $white;
+          font-size: 22px;
+          font-weight: 900;
+          bottom: 30px;
+          left: 20px;
+          span {
+            font-size: 14px;
+            font-weight: normal;
+          }
+        }
+        .sidebar-thumb-title {
+          position: absolute;
+          color: $white;
+          font-size: 18px;
+          bottom: 20px;
+          left: 20px;
         }
       }
     }

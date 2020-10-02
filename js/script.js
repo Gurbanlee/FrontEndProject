@@ -34,6 +34,8 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".owl-sidebar").owlCarousel();
   // OWLCAROUSEL END
 
   $(".fh-dropdown").click(function () {
