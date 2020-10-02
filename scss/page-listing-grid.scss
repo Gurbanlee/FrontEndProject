@@ -135,4 +135,57 @@ body {
       }
     }
   }
+  .filter {
+    background-color: $white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    height: 60px;
+    margin: 0 auto 30px;
+    padding: 0 15px;
+    width: 96%;
+    display: flex;
+    color: #555555;
+    .filter-left-side {
+      p {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+    .filter-right-side {
+      margin-top: 15px;
+      font-size: 14px;
+      .filter-rs-status {
+        position: relative;
+        display: inline-block;
+        &::after {
+          position: absolute;
+          content: "";
+          background-color: rgb(232, 238, 242);
+          height: 35px;
+          right: -10px;
+          width: 1px;
+        }
+      }
+      .filter-rs-sort {
+        display: inline-block;
+        margin-left: 20px;
+      }
+      span {
+        font-weight: bold;
+      }
+      .btn-group {
+        button {
+          padding-left: 0;
+        }
+        display: inline-block;
+        .btn-secondary {
+          background-color: transparent;
+          color: $black;
+          font-size: 14px;
+          border-color: transparent;
+        }
+      }
+    }
+  }
 }

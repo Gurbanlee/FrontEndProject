@@ -440,3 +440,64 @@ body h6 {
 #listing .sidebar .sidebar-content .sidebar-item #max-area:last-child {
   margin-right: 0;
 }
+
+#listing .filter {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  height: 60px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  width: 96%;
+  display: flex;
+  color: #555555;
+}
+
+#listing .filter .filter-left-side p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#listing .filter .filter-right-side {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#listing .filter .filter-right-side .filter-rs-status {
+  position: relative;
+  display: inline-block;
+}
+
+#listing .filter .filter-right-side .filter-rs-status::after {
+  position: absolute;
+  content: "";
+  background-color: #e8eef2;
+  height: 35px;
+  right: -10px;
+  width: 1px;
+}
+
+#listing .filter .filter-right-side .filter-rs-sort {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#listing .filter .filter-right-side span {
+  font-weight: bold;
+}
+
+#listing .filter .filter-right-side .btn-group {
+  display: inline-block;
+}
+
+#listing .filter .filter-right-side .btn-group button {
+  padding-left: 0;
+}
+
+#listing .filter .filter-right-side .btn-group .btn-secondary {
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  border-color: transparent;
+}
