@@ -298,6 +298,15 @@ body {
   background-color: #fff;
 }
 
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  color: #484848;
+}
+
 #page-head {
   padding: 10px 0;
 }
