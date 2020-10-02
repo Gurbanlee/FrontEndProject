@@ -58,3 +58,17 @@ body {
     }
   }
 }
+
+#listing {
+  background-color: #f7f7f7;
+  height: 1000px;
+  .breadcrumb {
+    background-color: transparent;
+    .active {
+      color: $main-color;
+    }
+    a {
+      color: #555555;
+    }
+  }
+}
