@@ -188,4 +188,48 @@ body {
       }
     }
   }
+  .fp-card {
+    padding: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+    .fp-thumb {
+      img {
+        border-radius: 8px 8px 0 0 !important;
+      }
+    }
+    .fp-body {
+      padding: 10px 10px 0 10px;
+      .fp-author {
+        .fp-author-name {
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+  .pagination {
+    .page-item {
+      margin-right: 20px;
+      .disabled {
+        background-color: $main-color;
+        color: $white !important;
+      }
+      .page-link {
+        border-radius: 50%;
+        color: #555555;
+        font-weight: 400;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 2.5;
+        border-color: #ebebeb;
+        font-size: 14px;
+        color: #777777;
+        &:hover {
+          background-color: $main-color;
+          color: $white;
+        }
+      }
+    }
+  }
 }

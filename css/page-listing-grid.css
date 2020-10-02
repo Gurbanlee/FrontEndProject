@@ -501,3 +501,49 @@ body h6 {
   font-size: 14px;
   border-color: transparent;
 }
+
+#listing .fp-card {
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}
+
+#listing .fp-card .fp-thumb img {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+#listing .fp-card .fp-body {
+  padding: 10px 10px 0 10px;
+}
+
+#listing .fp-card .fp-body .fp-author .fp-author-name {
+  margin-left: 15px;
+}
+
+#listing .pagination .page-item {
+  margin-right: 20px;
+}
+
+#listing .pagination .page-item .disabled {
+  background-color: #ff5a5f;
+  color: #fff !important;
+}
+
+#listing .pagination .page-item .page-link {
+  border-radius: 50%;
+  color: #555555;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 2.5;
+  border-color: #ebebeb;
+  font-size: 14px;
+  color: #777777;
+}
+
+#listing .pagination .page-item .page-link:hover {
+  background-color: #ff5a5f;
+  color: #fff;
+}

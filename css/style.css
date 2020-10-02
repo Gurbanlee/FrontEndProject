@@ -521,11 +521,13 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
   color: #ff5a5f;
 }
 
-body #featured {
+body #featured,
+body #listing {
   background-color: #f7f7f7;
 }
 
-body #featured .fp-card {
+body #featured .fp-card,
+body #listing .fp-card {
   margin-top: 30px;
   background-color: #fff;
   padding: 10px;
@@ -534,20 +536,24 @@ body #featured .fp-card {
   transition: all 0.3s ease;
 }
 
-body #featured .fp-card:hover {
+body #featured .fp-card:hover,
+body #listing .fp-card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
-body #featured .fp-card .fp-thumb {
+body #featured .fp-card .fp-thumb,
+body #listing .fp-card .fp-thumb {
   position: relative;
 }
 
-body #featured .fp-card .fp-thumb img {
+body #featured .fp-card .fp-thumb img,
+body #listing .fp-card .fp-thumb img {
   border-radius: 8px;
 }
 
-body #featured .fp-card .fp-thumb .red-con {
+body #featured .fp-card .fp-thumb .red-con,
+body #listing .fp-card .fp-thumb .red-con {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -559,34 +565,40 @@ body #featured .fp-card .fp-thumb .red-con {
   font-size: 14px;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb {
+body #featured .fp-card .fp-thumb .fp-on-thumb,
+body #listing .fp-card .fp-thumb .fp-on-thumb {
   position: relative;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
   position: absolute;
   top: -45px;
   left: 30px;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
   font-size: 22px;
   color: #fff;
   font-weight: 700;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
   color: #fff !important;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
   position: absolute;
   right: 30px;
   bottom: 10px;
   color: #fff;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
   width: 35px;
@@ -596,57 +608,69 @@ body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
   text-align: center;
 }
 
-body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
+body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
   line-height: 2.2;
 }
 
-body #featured .fp-card .fp-body {
+body #featured .fp-card .fp-body,
+body #listing .fp-card .fp-body {
   margin: 15px 0 20px 10px;
 }
 
-body #featured .fp-card .fp-body .fp-category {
+body #featured .fp-card .fp-body .fp-category,
+body #listing .fp-card .fp-body .fp-category {
   color: #ff5a5f;
   font-size: 14px;
 }
 
-body #featured .fp-card .fp-body .fp-title {
+body #featured .fp-card .fp-body .fp-title,
+body #listing .fp-card .fp-body .fp-title {
   font-weight: 700;
   font-size: 18px;
 }
 
-body #featured .fp-card .fp-body .fp-address {
+body #featured .fp-card .fp-body .fp-address,
+body #listing .fp-card .fp-body .fp-address {
   font-size: 14px;
   line-height: 1.2;
   word-spacing: -3px;
 }
 
-body #featured .fp-card .fp-body .fp-about {
+body #featured .fp-card .fp-body .fp-about,
+body #listing .fp-card .fp-body .fp-about {
   font-size: 14px;
   line-height: 1.2;
 }
 
 body #featured .fp-card .fp-body .fp-about .fp-about-bed,
-body #featured .fp-card .fp-body .fp-about .fp-about-baths {
+body #featured .fp-card .fp-body .fp-about .fp-about-baths,
+body #listing .fp-card .fp-body .fp-about .fp-about-bed,
+body #listing .fp-card .fp-body .fp-about .fp-about-baths {
   margin-right: 30px;
 }
 
-body #featured .fp-card .fp-body .fp-author {
+body #featured .fp-card .fp-body .fp-author,
+body #listing .fp-card .fp-body .fp-author {
   border-top: 1px solid #eeeeee;
   padding: 20px;
   margin-top: 25px;
   width: 100%;
 }
 
-body #featured .fp-card .fp-body .fp-author .fp-author-left-side {
+body #featured .fp-card .fp-body .fp-author .fp-author-left-side,
+body #listing .fp-card .fp-body .fp-author .fp-author-left-side {
   display: inline-block;
 }
 
-body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
+body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
+body #listing .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
   width: 30px;
   display: inline-block;
 }
 
-body #featured .fp-card .fp-body .fp-author .fp-author-right-side {
+body #featured .fp-card .fp-body .fp-author .fp-author-right-side,
+body #listing .fp-card .fp-body .fp-author .fp-author-right-side {
   display: inline-block;
   margin-left: 75px;
 }

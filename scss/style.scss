@@ -210,7 +210,8 @@ body {
   //////////////// HEADER SECTION END ////////////////
 
   //////////////// FEATURED SECTION START ////////////////
-  #featured {
+  #featured,
+  #listing {
     background-color: $section-bg;
     .fp-card {
       margin-top: 30px;
