@@ -501,7 +501,7 @@ body {
       img {
         border: 10px solid rgba(255, 255, 255, 0.1);
         border-radius: 50%;
-        display: inline;
+        display: inline-block;
         height: 115px;
         width: 115px;
       }
@@ -1350,6 +1350,29 @@ body {
         p {
           font-size: 14px;
           margin-bottom: 0;
+        }
+      }
+    }
+  }
+  #testimonials {
+    background-color: $white;
+    color: #484848;
+    .sections-head {
+      h3 {
+        color: #484848 !important;
+      }
+      p {
+        color: #484848 !important;
+      }
+    }
+    &::before {
+      background-image: none;
+    }
+    .testi-card {
+      .testi-card-thumb {
+        img {
+          border: 5px solid $white;
+          box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
         }
       }
     }
