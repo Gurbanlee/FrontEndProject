@@ -576,13 +576,15 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
 
 body #featured,
 body #listing,
-body #agent-list {
+body #agent-list,
+body #head-page-agent-detail {
   background-color: #f7f7f7;
 }
 
 body #featured .fp-card,
 body #listing .fp-card,
-body #agent-list .fp-card {
+body #agent-list .fp-card,
+body #head-page-agent-detail .fp-card {
   margin-top: 30px;
   background-color: #fff;
   padding: 10px;
@@ -593,26 +595,30 @@ body #agent-list .fp-card {
 
 body #featured .fp-card:hover,
 body #listing .fp-card:hover,
-body #agent-list .fp-card:hover {
+body #agent-list .fp-card:hover,
+body #head-page-agent-detail .fp-card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 body #featured .fp-card .fp-thumb,
 body #listing .fp-card .fp-thumb,
-body #agent-list .fp-card .fp-thumb {
+body #agent-list .fp-card .fp-thumb,
+body #head-page-agent-detail .fp-card .fp-thumb {
   position: relative;
 }
 
 body #featured .fp-card .fp-thumb img,
 body #listing .fp-card .fp-thumb img,
-body #agent-list .fp-card .fp-thumb img {
+body #agent-list .fp-card .fp-thumb img,
+body #head-page-agent-detail .fp-card .fp-thumb img {
   border-radius: 8px;
 }
 
 body #featured .fp-card .fp-thumb .red-con,
 body #listing .fp-card .fp-thumb .red-con,
-body #agent-list .fp-card .fp-thumb .red-con {
+body #agent-list .fp-card .fp-thumb .red-con,
+body #head-page-agent-detail .fp-card .fp-thumb .red-con {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -626,13 +632,15 @@ body #agent-list .fp-card .fp-thumb .red-con {
 
 body #featured .fp-card .fp-thumb .fp-on-thumb,
 body #listing .fp-card .fp-thumb .fp-on-thumb,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb {
   position: relative;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
   position: absolute;
   top: -45px;
   left: 30px;
@@ -640,7 +648,8 @@ body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
   font-size: 22px;
   color: #fff;
   font-weight: 700;
@@ -648,13 +657,15 @@ body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
   color: #fff !important;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
   position: absolute;
   right: 30px;
   bottom: 10px;
@@ -663,7 +674,8 @@ body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
   width: 35px;
@@ -675,33 +687,38 @@ body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
 body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
-body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
+body #head-page-agent-detail .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
   line-height: 2.2;
 }
 
 body #featured .fp-card .fp-body,
 body #listing .fp-card .fp-body,
-body #agent-list .fp-card .fp-body {
+body #agent-list .fp-card .fp-body,
+body #head-page-agent-detail .fp-card .fp-body {
   margin: 15px 0 20px 10px;
 }
 
 body #featured .fp-card .fp-body .fp-category,
 body #listing .fp-card .fp-body .fp-category,
-body #agent-list .fp-card .fp-body .fp-category {
+body #agent-list .fp-card .fp-body .fp-category,
+body #head-page-agent-detail .fp-card .fp-body .fp-category {
   color: #ff5a5f;
   font-size: 14px;
 }
 
 body #featured .fp-card .fp-body .fp-title,
 body #listing .fp-card .fp-body .fp-title,
-body #agent-list .fp-card .fp-body .fp-title {
+body #agent-list .fp-card .fp-body .fp-title,
+body #head-page-agent-detail .fp-card .fp-body .fp-title {
   font-weight: 700;
   font-size: 18px;
 }
 
 body #featured .fp-card .fp-body .fp-address,
 body #listing .fp-card .fp-body .fp-address,
-body #agent-list .fp-card .fp-body .fp-address {
+body #agent-list .fp-card .fp-body .fp-address,
+body #head-page-agent-detail .fp-card .fp-body .fp-address {
   font-size: 14px;
   line-height: 1.2;
   word-spacing: -3px;
@@ -709,7 +726,8 @@ body #agent-list .fp-card .fp-body .fp-address {
 
 body #featured .fp-card .fp-body .fp-about,
 body #listing .fp-card .fp-body .fp-about,
-body #agent-list .fp-card .fp-body .fp-about {
+body #agent-list .fp-card .fp-body .fp-about,
+body #head-page-agent-detail .fp-card .fp-body .fp-about {
   font-size: 14px;
   line-height: 1.2;
 }
@@ -719,13 +737,16 @@ body #featured .fp-card .fp-body .fp-about .fp-about-baths,
 body #listing .fp-card .fp-body .fp-about .fp-about-bed,
 body #listing .fp-card .fp-body .fp-about .fp-about-baths,
 body #agent-list .fp-card .fp-body .fp-about .fp-about-bed,
-body #agent-list .fp-card .fp-body .fp-about .fp-about-baths {
+body #agent-list .fp-card .fp-body .fp-about .fp-about-baths,
+body #head-page-agent-detail .fp-card .fp-body .fp-about .fp-about-bed,
+body #head-page-agent-detail .fp-card .fp-body .fp-about .fp-about-baths {
   margin-right: 30px;
 }
 
 body #featured .fp-card .fp-body .fp-author,
 body #listing .fp-card .fp-body .fp-author,
-body #agent-list .fp-card .fp-body .fp-author {
+body #agent-list .fp-card .fp-body .fp-author,
+body #head-page-agent-detail .fp-card .fp-body .fp-author {
   border-top: 1px solid #eeeeee;
   padding: 20px;
   margin-top: 25px;
@@ -734,20 +755,23 @@ body #agent-list .fp-card .fp-body .fp-author {
 
 body #featured .fp-card .fp-body .fp-author .fp-author-left-side,
 body #listing .fp-card .fp-body .fp-author .fp-author-left-side,
-body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side {
+body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side,
+body #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-left-side {
   display: inline-block;
 }
 
 body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
 body #listing .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
-body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
+body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
+body #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
   width: 30px;
   display: inline-block;
 }
 
 body #featured .fp-card .fp-body .fp-author .fp-author-right-side,
 body #listing .fp-card .fp-body .fp-author .fp-author-right-side,
-body #agent-list .fp-card .fp-body .fp-author .fp-author-right-side {
+body #agent-list .fp-card .fp-body .fp-author .fp-author-right-side,
+body #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-right-side {
   display: inline-block;
   margin-left: 75px;
 }
@@ -857,13 +881,13 @@ body #why-us .wcu-cards .wcu-cards-body p {
   font-size: 14px;
 }
 
-#testimonials {
+body #testimonials {
   position: relative;
   background-color: #1d293e;
   color: #fff;
 }
 
-#testimonials:before {
+body #testimonials:before {
   background-image: url(../uploads/img/bg2.jpg);
   bottom: 0;
   content: "";
@@ -874,12 +898,12 @@ body #why-us .wcu-cards .wcu-cards-body p {
   top: 0;
 }
 
-#testimonials .sections-head h3,
-#testimonials .sections-head p {
+body #testimonials .sections-head h3,
+body #testimonials .sections-head p {
   color: #fff !important;
 }
 
-#testimonials .testi-card .testi-card-thumb img {
+body #testimonials .testi-card .testi-card-thumb img {
   border: 10px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: inline-block;
@@ -887,25 +911,25 @@ body #why-us .wcu-cards .wcu-cards-body p {
   width: 115px;
 }
 
-#testimonials .testi-card .testi-card-body .testi-card-body-header {
+body #testimonials .testi-card .testi-card-body .testi-card-body-header {
   line-height: 0.5;
   text-transform: capitalize;
 }
 
-#testimonials .testi-card .testi-card-body .testi-card-body-header p {
+body #testimonials .testi-card .testi-card-body .testi-card-body-header p {
   font-size: 14px;
 }
 
-#testimonials .testi-card .testi-card-body-desc {
+body #testimonials .testi-card .testi-card-body-desc {
   font-size: 14px;
   line-height: 1.4;
 }
 
-#blog {
+body #blog {
   background-color: #f7f7f7;
 }
 
-#blog .blog-card {
+body #blog .blog-card {
   height: 100%;
   margin-top: 30px;
   background-color: #fff;
@@ -915,31 +939,31 @@ body #why-us .wcu-cards .wcu-cards-body p {
   transition: all 0.3s ease;
 }
 
-#blog .blog-card:hover {
+body #blog .blog-card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
-#blog .blog-card .blog-thumb img {
+body #blog .blog-card .blog-thumb img {
   border-radius: 8px;
 }
 
-#blog .blog-card .blog-body {
+body #blog .blog-card .blog-body {
   margin: 15px 0 20px 10px;
 }
 
-#blog .blog-card .blog-body .blog-category {
+body #blog .blog-card .blog-body .blog-category {
   color: #ff5a5f;
   font-size: 14px;
 }
 
-#blog .blog-card .blog-body .blog-title {
+body #blog .blog-card .blog-body .blog-title {
   font-weight: bold;
   font-size: 18px;
   line-height: 1.2;
 }
 
-#blog .blog-card .blog-body .blog-author {
+body #blog .blog-card .blog-body .blog-author {
   border-top: 1px solid #eeeeee;
   padding-top: 20px;
   margin-top: 25px;
@@ -947,45 +971,45 @@ body #why-us .wcu-cards .wcu-cards-body p {
   font-size: 14px;
 }
 
-#blog .blog-card .blog-body .blog-author .blog-author-left-side {
+body #blog .blog-card .blog-body .blog-author .blog-author-left-side {
   display: inline-block;
 }
 
-#blog .blog-card .blog-body .blog-author .blog-author-left-side .blog-author-img {
+body #blog .blog-card .blog-body .blog-author .blog-author-left-side .blog-author-img {
   display: inline-block;
 }
 
-#blog .blog-card .blog-body .blog-author .blog-author-right-side {
+body #blog .blog-card .blog-body .blog-author .blog-author-right-side {
   display: inline-block;
   margin-left: 75px;
 }
 
-#partners {
+body #partners {
   background-color: #fff;
 }
 
-#partners .partners-logo {
+body #partners .partners-logo {
   text-align: center;
 }
 
-#become-rea {
+body #become-rea {
   background-color: #ff5a5f;
   padding-bottom: 40px;
 }
 
-#become-rea .become-rea-info {
+body #become-rea .become-rea-info {
   color: #fff;
 }
 
-#become-rea .become-rea-info h3 {
+body #become-rea .become-rea-info h3 {
   font-weight: bold;
 }
 
-#become-rea .become-rea-info p {
+body #become-rea .become-rea-info p {
   font-size: 14px;
 }
 
-#become-rea .become-rea-reg button {
+body #become-rea .become-rea-reg button {
   width: 200px;
   height: 60px;
   border-radius: 8px;
@@ -994,19 +1018,19 @@ body #why-us .wcu-cards .wcu-cards-body p {
   text-transform: capitalize;
 }
 
-#become-rea .become-rea-reg button:hover {
+body #become-rea .become-rea-reg button:hover {
   background-color: #fff;
   color: #ff5a5f;
   border-color: #fff;
 }
 
-#footer-up {
+body #footer-up {
   background-color: #24324a;
   color: #8a99b3;
   font-size: 14px;
 }
 
-#footer-up .footer-up-side h3 {
+body #footer-up .footer-up-side h3 {
   color: #fff;
   font-weight: bold;
   font-size: 18px;
@@ -1014,46 +1038,46 @@ body #why-us .wcu-cards .wcu-cards-body p {
   text-transform: capitalize;
 }
 
-#footer-up .footer-up-side p {
+body #footer-up .footer-up-side p {
   line-height: 2.1;
   margin-bottom: 5px;
 }
 
-#footer-up .footer-up-side ul {
+body #footer-up .footer-up-side ul {
   list-style-type: none;
   padding: 0;
 }
 
-#footer-up .footer-up-side ul li {
+body #footer-up .footer-up-side ul li {
   margin-bottom: 10px;
   text-transform: capitalize;
 }
 
-#footer-up .footer-up-side a {
+body #footer-up .footer-up-side a {
   color: #8a99b3;
 }
 
-#footer-up .footer-up-side a:hover {
+body #footer-up .footer-up-side a:hover {
   color: #fff;
 }
 
-#footer-up .footer-up-side .footer-up-social {
+body #footer-up .footer-up-side .footer-up-social {
   margin-bottom: 30px;
 }
 
-#footer-up .footer-up-side .footer-up-social a {
+body #footer-up .footer-up-side .footer-up-social a {
   margin-left: 25px;
 }
 
-#footer-up .footer-up-side .footer-up-social a:first-child {
+body #footer-up .footer-up-side .footer-up-social a:first-child {
   margin-left: 0;
 }
 
-#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp {
+body #footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp {
   position: relative;
 }
 
-#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp input {
+body #footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp input {
   width: 200px;
   height: 50px;
   border-radius: 50px;
@@ -1062,11 +1086,11 @@ body #why-us .wcu-cards .wcu-cards-body p {
   padding-left: 30px;
 }
 
-#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .form-control {
+body #footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .form-control {
   display: inline-block;
 }
 
-#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button {
+body #footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button {
   display: inline-block;
   position: absolute;
   width: 50px;
@@ -1075,35 +1099,35 @@ body #why-us .wcu-cards .wcu-cards-body p {
   background-color: #354765;
 }
 
-#footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button i {
+body #footer-up .footer-up-side .footer-up-subs .footer-up-subs-inp .fas-button i {
   line-height: 3.5;
 }
 
-#footer-down {
+body #footer-down {
   background-color: #1d293e;
   color: #8a99b3;
   font-size: 14px;
 }
 
-#footer-down .footer-down-list ul {
+body #footer-down .footer-down-list ul {
   list-style-type: none;
 }
 
-#footer-down .footer-down-list ul li {
+body #footer-down .footer-down-list ul li {
   display: inline-block;
   margin-left: 40px;
 }
 
-#footer-down .footer-down-list ul li:first-child {
+body #footer-down .footer-down-list ul li:first-child {
   margin-left: 0;
 }
 
-#footer-down .footer-down-list ul li a {
+body #footer-down .footer-down-list ul li a {
   text-transform: capitalize;
   color: #8a99b3;
 }
 
-#footer-down .footer-down-list ul li a:hover {
+body #footer-down .footer-down-list ul li a:hover {
   color: #fff;
 }
 
@@ -1857,24 +1881,24 @@ body #why-us .wcu-cards .wcu-cards-body p {
   background-color: #f7f7f7;
 }
 
-#head-page-agent-detail {
+#agent-detail #head-page-agent-detail {
   background-color: #f7f7f7;
   color: #484848;
 }
 
-#head-page-agent-detail .breadcrumb {
+#agent-detail #head-page-agent-detail .breadcrumb {
   background-color: transparent;
 }
 
-#head-page-agent-detail .breadcrumb .active {
+#agent-detail #head-page-agent-detail .breadcrumb .active {
   color: #ff5a5f;
 }
 
-#head-page-agent-detail .breadcrumb a {
+#agent-detail #head-page-agent-detail .breadcrumb a {
   color: #555555;
 }
 
-#head-page-agent-detail .sidebar {
+#agent-detail #head-page-agent-detail .sidebar {
   background-color: #fff;
   border: 1px solid #ebebeb;
   border-radius: 8px;
@@ -1883,47 +1907,47 @@ body #why-us .wcu-cards .wcu-cards-body p {
   margin-bottom: 30px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-title {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-title {
   margin-bottom: 25px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item a {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item a {
   color: #484848;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item a:hover {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item a:hover {
   color: #ff5a5f;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog {
   margin-top: 20px;
   color: #484848;
   cursor: pointer;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title {
   text-transform: capitalize;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title h5 {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title h5 {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.2;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price {
   color: #ff5a5f;
   font-weight: bold;
   font-size: 16px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price span {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price span {
   font-size: 14px;
   font-weight: normal;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content input,
-#head-page-agent-detail .sidebar .sidebar-content select {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content input,
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content select {
   height: 50px;
   border-radius: 8px;
   border: 1px solid #ebebeb;
@@ -1931,12 +1955,12 @@ body #why-us .wcu-cards .wcu-cards-body p {
   padding-left: 20px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content i {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content i {
   margin-right: 10px;
   color: #555555;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content button {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content button {
   width: 100%;
   height: 50px;
   margin-top: 20px;
@@ -1944,13 +1968,13 @@ body #why-us .wcu-cards .wcu-cards-body p {
   border-color: #ff5a5f;
 }
 
-#head-page-agent-detail .sidebar .sidebar-content button:hover {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-content button:hover {
   background-color: #fff;
   border: 2px solid #ff5a5f;
   color: #ff5a5f;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb {
   position: relative;
   padding: 10px;
   border: 1px solid #ebebeb;
@@ -1959,17 +1983,17 @@ body #why-us .wcu-cards .wcu-cards-body p {
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb:hover {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb:hover {
   cursor: pointer;
   box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb img {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb img {
   border-radius: 8px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-for-rent,
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-featured {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-for-rent,
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-featured {
   position: absolute;
   text-transform: capitalize;
   padding: 2px 13px;
@@ -1977,19 +2001,19 @@ body #why-us .wcu-cards .wcu-cards-body p {
   color: #fff;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-for-rent {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-for-rent {
   top: 20px;
   left: 20px;
   background-color: #3e4c66;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-featured {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-featured {
   top: 20px;
   left: 110px;
   background-color: #ff5a5f;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-price {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-price {
   position: absolute;
   color: #fff;
   font-size: 22px;
@@ -1998,15 +2022,60 @@ body #why-us .wcu-cards .wcu-cards-body p {
   left: 20px;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-price span {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-price span {
   font-size: 14px;
   font-weight: normal;
 }
 
-#head-page-agent-detail .sidebar .sidebar-thumb .sidebar-thumb-title {
+#agent-detail #head-page-agent-detail .sidebar .sidebar-thumb .sidebar-thumb-title {
   position: absolute;
   color: #fff;
   font-size: 18px;
   bottom: 20px;
   left: 20px;
+}
+
+#agent-detail #head-page-agent-detail .fp-card {
+  color: #484848;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-thumb {
+  width: 45%;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body {
+  margin-left: 30px;
+  padding-top: 20px;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-about {
+  margin-top: 10px;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-about p {
+  margin-bottom: 10px;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-author {
+  border: none;
+  padding: 0;
+  width: 100%;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-left-side {
+  font-size: 14px;
+  color: #777777;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-left-side i {
+  margin-right: 10px;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-right-side {
+  margin-left: 0;
+}
+
+#agent-detail #head-page-agent-detail .fp-card .fp-body .fp-author .fp-author-right-side a {
+  font-size: 14px;
+  color: #ff5a5f;
 }

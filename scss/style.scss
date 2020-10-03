@@ -268,7 +268,8 @@ body {
   //////////////// FEATURED SECTION START ////////////////
   #featured,
   #listing,
-  #agent-list {
+  #agent-list,
+  #head-page-agent-detail {
     background-color: $section-bg;
     .fp-card {
       margin-top: 30px;
@@ -472,247 +473,246 @@ body {
     }
   }
   //////////////// WHY US SECTION END ////////////////
-}
 
-//////////////// TESTIMONIALS SECTION START ////////////////
-#testimonials {
-  position: relative;
-  background-color: #1d293e;
-  color: $white;
-  &:before {
-    background-image: url(../uploads/img/bg2.jpg);
-    bottom: 0;
-    content: "";
-    left: 0;
-    opacity: 0.5;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .sections-head {
-    h3,
-    p {
-      color: $white !important;
+  //////////////// TESTIMONIALS SECTION START ////////////////
+  #testimonials {
+    position: relative;
+    background-color: #1d293e;
+    color: $white;
+    &:before {
+      background-image: url(../uploads/img/bg2.jpg);
+      bottom: 0;
+      content: "";
+      left: 0;
+      opacity: 0.5;
+      position: absolute;
+      right: 0;
+      top: 0;
     }
-  }
-  .testi-card {
-    .testi-card-thumb {
-      img {
-        border: 10px solid rgba(255, 255, 255, 0.1);
-        border-radius: 50%;
-        display: inline-block;
-        height: 115px;
-        width: 115px;
+    .sections-head {
+      h3,
+      p {
+        color: $white !important;
       }
     }
-    .testi-card-body {
-      .testi-card-body-header {
-        line-height: 0.5;
-        text-transform: capitalize;
-        p {
+    .testi-card {
+      .testi-card-thumb {
+        img {
+          border: 10px solid rgba(255, 255, 255, 0.1);
+          border-radius: 50%;
+          display: inline-block;
+          height: 115px;
+          width: 115px;
+        }
+      }
+      .testi-card-body {
+        .testi-card-body-header {
+          line-height: 0.5;
+          text-transform: capitalize;
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+      .testi-card-body-desc {
+        font-size: 14px;
+        line-height: 1.4;
+      }
+    }
+  }
+  //////////////// TESTIMONIALS SECTION END ////////////////
+
+  //////////////// BLOG SECTION START ////////////////
+  #blog {
+    background-color: $section-bg;
+    .blog-card {
+      height: 100%;
+      margin-top: 30px;
+      background-color: $white;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ebebeb;
+      transition: all 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+      }
+      .blog-thumb {
+        img {
+          border-radius: 8px;
+        }
+      }
+      .blog-body {
+        margin: 15px 0 20px 10px;
+        .blog-category {
+          color: $main-color;
           font-size: 14px;
         }
+        .blog-title {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 1.2;
+        }
+        .blog-author {
+          border-top: 1px solid #eeeeee;
+          padding-top: 20px;
+          margin-top: 25px;
+          color: #777777;
+          font-size: 14px;
+          .blog-author-left-side {
+            display: inline-block;
+            .blog-author-img {
+              display: inline-block;
+            }
+          }
+          .blog-author-right-side {
+            display: inline-block;
+            margin-left: 75px;
+          }
+        }
       }
-    }
-    .testi-card-body-desc {
-      font-size: 14px;
-      line-height: 1.4;
     }
   }
-}
-//////////////// TESTIMONIALS SECTION END ////////////////
+  //////////////// BLOG SECTION END ////////////////
 
-//////////////// BLOG SECTION START ////////////////
-#blog {
-  background-color: $section-bg;
-  .blog-card {
-    height: 100%;
-    margin-top: 30px;
+  //////////////// PARTNER SECTION START ////////////////
+  #partners {
     background-color: $white;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ebebeb;
-    transition: all 0.3s ease;
-    &:hover {
-      cursor: pointer;
-      box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
+    .partners-logo {
+      text-align: center;
     }
-    .blog-thumb {
-      img {
-        border-radius: 8px;
+  }
+  //////////////// PARTNER SECTION START ////////////////
+
+  //////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
+  #become-rea {
+    background-color: $main-color;
+    padding-bottom: 40px;
+    .become-rea-info {
+      color: $white;
+      h3 {
+        font-weight: bold;
       }
-    }
-    .blog-body {
-      margin: 15px 0 20px 10px;
-      .blog-category {
-        color: $main-color;
+      p {
         font-size: 14px;
       }
-      .blog-title {
+    }
+    .become-rea-reg {
+      button {
+        width: 200px;
+        height: 60px;
+        border-radius: 8px;
+        background-color: rgb(255, 120, 124);
+        border-color: rgb(255, 120, 124);
+        text-transform: capitalize;
+        &:hover {
+          background-color: $white;
+          color: $main-color;
+          border-color: $white;
+        }
+      }
+    }
+  }
+  //////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
+
+  //////////////// FOOTER UP SECTION START ////////////////
+  #footer-up {
+    background-color: #24324a;
+    color: #8a99b3;
+    font-size: 14px;
+    .footer-up-side {
+      h3 {
+        color: $white;
         font-weight: bold;
         font-size: 18px;
-        line-height: 1.2;
-      }
-      .blog-author {
-        border-top: 1px solid #eeeeee;
-        padding-top: 20px;
-        margin-top: 25px;
-        color: #777777;
-        font-size: 14px;
-        .blog-author-left-side {
-          display: inline-block;
-          .blog-author-img {
-            display: inline-block;
-          }
-        }
-        .blog-author-right-side {
-          display: inline-block;
-          margin-left: 75px;
-        }
-      }
-    }
-  }
-}
-//////////////// BLOG SECTION END ////////////////
-
-//////////////// PARTNER SECTION START ////////////////
-#partners {
-  background-color: $white;
-  .partners-logo {
-    text-align: center;
-  }
-}
-//////////////// PARTNER SECTION START ////////////////
-
-//////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
-#become-rea {
-  background-color: $main-color;
-  padding-bottom: 40px;
-  .become-rea-info {
-    color: $white;
-    h3 {
-      font-weight: bold;
-    }
-    p {
-      font-size: 14px;
-    }
-  }
-  .become-rea-reg {
-    button {
-      width: 200px;
-      height: 60px;
-      border-radius: 8px;
-      background-color: rgb(255, 120, 124);
-      border-color: rgb(255, 120, 124);
-      text-transform: capitalize;
-      &:hover {
-        background-color: $white;
-        color: $main-color;
-        border-color: $white;
-      }
-    }
-  }
-}
-//////////////// BECOME A REAL ESTATE AGENT SECTION START ////////////////
-
-//////////////// FOOTER UP SECTION START ////////////////
-#footer-up {
-  background-color: #24324a;
-  color: #8a99b3;
-  font-size: 14px;
-  .footer-up-side {
-    h3 {
-      color: $white;
-      font-weight: bold;
-      font-size: 18px;
-      margin-bottom: 30px;
-      text-transform: capitalize;
-    }
-    p {
-      line-height: 2.1;
-      margin-bottom: 5px;
-    }
-    ul {
-      list-style-type: none;
-      padding: 0;
-      li {
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         text-transform: capitalize;
       }
-    }
-    a {
-      color: #8a99b3;
-      &:hover {
-        color: $white;
+      p {
+        line-height: 2.1;
+        margin-bottom: 5px;
       }
-    }
-    .footer-up-social {
-      margin-bottom: 30px;
-      a {
-        margin-left: 25px;
-        &:first-child {
-          margin-left: 0;
-        }
-      }
-    }
-    .footer-up-subs {
-      .footer-up-subs-inp {
-        position: relative;
-        input {
-          width: 200px;
-          height: 50px;
-          border-radius: 50px;
-          background-color: #354765;
-          border: 1px solid #354765;
-          padding-left: 30px;
-        }
-        .form-control {
-          display: inline-block;
-        }
-        .fas-button {
-          display: inline-block;
-          position: absolute;
-          width: 50px;
-          height: 50px;
-          border-radius: 50%;
-          background-color: #354765;
-          i {
-            line-height: 3.5;
-          }
-        }
-      }
-    }
-  }
-}
-//////////////// FOOTER UP SECTION END ////////////////
-
-//////////////// FOOTER DOWN SECTION END ////////////////
-#footer-down {
-  background-color: #1d293e;
-  color: #8a99b3;
-  font-size: 14px;
-  .footer-down-list {
-    ul {
-      list-style-type: none;
-      li {
-        display: inline-block;
-        margin-left: 40px;
-        &:first-child {
-          margin-left: 0;
-        }
-        a {
+      ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+          margin-bottom: 10px;
           text-transform: capitalize;
-          color: #8a99b3;
-          &:hover {
-            color: $white;
+        }
+      }
+      a {
+        color: #8a99b3;
+        &:hover {
+          color: $white;
+        }
+      }
+      .footer-up-social {
+        margin-bottom: 30px;
+        a {
+          margin-left: 25px;
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+      }
+      .footer-up-subs {
+        .footer-up-subs-inp {
+          position: relative;
+          input {
+            width: 200px;
+            height: 50px;
+            border-radius: 50px;
+            background-color: #354765;
+            border: 1px solid #354765;
+            padding-left: 30px;
+          }
+          .form-control {
+            display: inline-block;
+          }
+          .fas-button {
+            display: inline-block;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #354765;
+            i {
+              line-height: 3.5;
+            }
           }
         }
       }
     }
   }
-}
-//////////////// FOOTER DOWN SECTION END ////////////////
+  //////////////// FOOTER UP SECTION END ////////////////
 
+  //////////////// FOOTER DOWN SECTION END ////////////////
+  #footer-down {
+    background-color: #1d293e;
+    color: #8a99b3;
+    font-size: 14px;
+    .footer-down-list {
+      ul {
+        list-style-type: none;
+        li {
+          display: inline-block;
+          margin-left: 40px;
+          &:first-child {
+            margin-left: 0;
+          }
+          a {
+            text-transform: capitalize;
+            color: #8a99b3;
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+  //////////////// FOOTER DOWN SECTION END ////////////////
+}
 #page-list-grid {
   background-color: $white;
   h1,
@@ -1381,139 +1381,177 @@ body {
   }
 }
 
-#head-page-agent-detail {
-  background-color: $section-bg;
-  color: #484848;
-  .breadcrumb {
-    background-color: transparent;
-    .active {
-      color: $main-color;
-    }
-    a {
-      color: #555555;
-    }
-  }
-
-  .sidebar {
-    background-color: $white;
-    border: 1px solid rgb(235, 235, 235);
-    border-radius: 8px;
-    padding: 30px 25px;
-    font-size: 14px;
-    margin-bottom: 30px;
-
-    .sidebar-content {
-      .sidebar-title {
-        margin-bottom: 25px;
+#agent-detail {
+  #head-page-agent-detail {
+    background-color: $section-bg;
+    color: #484848;
+    .breadcrumb {
+      background-color: transparent;
+      .active {
+        color: $main-color;
       }
-      .sidebar-item {
-        a {
-          color: #484848;
+      a {
+        color: #555555;
+      }
+    }
+
+    .sidebar {
+      background-color: $white;
+      border: 1px solid rgb(235, 235, 235);
+      border-radius: 8px;
+      padding: 30px 25px;
+      font-size: 14px;
+      margin-bottom: 30px;
+
+      .sidebar-content {
+        .sidebar-title {
+          margin-bottom: 25px;
+        }
+        .sidebar-item {
+          a {
+            color: #484848;
+            &:hover {
+              color: $main-color;
+            }
+          }
+          .mini-blog {
+            margin-top: 20px;
+            color: #484848;
+            cursor: pointer;
+            .mini-blog-body {
+              .mbb-title {
+                text-transform: capitalize;
+                h5 {
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 1.2;
+                }
+              }
+              .mbb-price {
+                color: $main-color;
+                font-weight: bold;
+                font-size: 16px;
+                span {
+                  font-size: 14px;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
+        }
+        input,
+        select {
+          height: 50px;
+          border-radius: 8px;
+          border: 1px solid rgb(235, 235, 235);
+          line-height: 1.2;
+          padding-left: 20px;
+        }
+        i {
+          margin-right: 10px;
+          color: #555555;
+        }
+
+        button {
+          width: 100%;
+          height: 50px;
+          margin-top: 20px;
+          background-color: $main-color;
+          border-color: $main-color;
           &:hover {
+            background-color: $white;
+            border: 2px solid $main-color;
             color: $main-color;
           }
         }
-        .mini-blog {
-          margin-top: 20px;
-          color: #484848;
+      }
+      .sidebar-thumb {
+        position: relative;
+        padding: 10px;
+        border: 1px solid rgb(235, 235, 235);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+        &:hover {
           cursor: pointer;
-          .mini-blog-body {
-            .mbb-title {
-              text-transform: capitalize;
-              h5 {
-                font-weight: bold;
-                font-size: 16px;
-                line-height: 1.2;
-              }
-            }
-            .mbb-price {
-              color: $main-color;
-              font-weight: bold;
-              font-size: 16px;
-              span {
-                font-size: 14px;
-                font-weight: normal;
-              }
-            }
+          box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+        }
+        img {
+          border-radius: 8px;
+        }
+        .sidebar-for-rent,
+        .sidebar-featured {
+          position: absolute;
+          text-transform: capitalize;
+          padding: 2px 13px;
+          border-radius: 5px;
+          color: $white;
+        }
+        .sidebar-for-rent {
+          top: 20px;
+          left: 20px;
+          background-color: #3e4c66;
+        }
+        .sidebar-featured {
+          top: 20px;
+          left: 110px;
+          background-color: $main-color;
+        }
+        .sidebar-price {
+          position: absolute;
+          color: $white;
+          font-size: 22px;
+          font-weight: 900;
+          bottom: 30px;
+          left: 20px;
+          span {
+            font-size: 14px;
+            font-weight: normal;
           }
         }
-      }
-      input,
-      select {
-        height: 50px;
-        border-radius: 8px;
-        border: 1px solid rgb(235, 235, 235);
-        line-height: 1.2;
-        padding-left: 20px;
-      }
-      i {
-        margin-right: 10px;
-        color: #555555;
-      }
-
-      button {
-        width: 100%;
-        height: 50px;
-        margin-top: 20px;
-        background-color: $main-color;
-        border-color: $main-color;
-        &:hover {
-          background-color: $white;
-          border: 2px solid $main-color;
-          color: $main-color;
+        .sidebar-thumb-title {
+          position: absolute;
+          color: $white;
+          font-size: 18px;
+          bottom: 20px;
+          left: 20px;
         }
       }
     }
-    .sidebar-thumb {
-      position: relative;
-      padding: 10px;
-      border: 1px solid rgb(235, 235, 235);
-      border-radius: 8px;
-      transition: all 0.3s ease;
-      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
-      &:hover {
-        cursor: pointer;
-        box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+
+    .fp-card {
+      color: #484848;
+      .fp-thumb {
+        width: 45%;
       }
-      img {
-        border-radius: 8px;
-      }
-      .sidebar-for-rent,
-      .sidebar-featured {
-        position: absolute;
-        text-transform: capitalize;
-        padding: 2px 13px;
-        border-radius: 5px;
-        color: $white;
-      }
-      .sidebar-for-rent {
-        top: 20px;
-        left: 20px;
-        background-color: #3e4c66;
-      }
-      .sidebar-featured {
-        top: 20px;
-        left: 110px;
-        background-color: $main-color;
-      }
-      .sidebar-price {
-        position: absolute;
-        color: $white;
-        font-size: 22px;
-        font-weight: 900;
-        bottom: 30px;
-        left: 20px;
-        span {
-          font-size: 14px;
-          font-weight: normal;
+      .fp-body {
+        margin-left: 30px;
+        padding-top: 20px;
+        .fp-about {
+          margin-top: 10px;
+          p {
+            margin-bottom: 10px;
+          }
         }
-      }
-      .sidebar-thumb-title {
-        position: absolute;
-        color: $white;
-        font-size: 18px;
-        bottom: 20px;
-        left: 20px;
+        .fp-author {
+          border: none;
+          padding: 0;
+          width: 100%;
+          .fp-author-left-side {
+            font-size: 14px;
+            color: #777777;
+            i {
+              margin-right: 10px;
+            }
+          }
+          .fp-author-right-side {
+            margin-left: 0;
+            a {
+              font-size: 14px;
+              color: $main-color;
+            }
+          }
+        }
       }
     }
   }
