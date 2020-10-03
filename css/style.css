@@ -1607,22 +1607,56 @@ body #why-us .wcu-cards .wcu-cards-body p {
 }
 
 #page-listing-agent #agent-list .fp-card {
-  padding: 0 !important;
   margin-top: 0 !important;
   margin-bottom: 30px;
   box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+  transition: all 0.3s ease;
+}
+
+#page-listing-agent #agent-list .fp-card:hover {
+  box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
 }
 
 #page-listing-agent #agent-list .fp-card .fp-thumb img {
-  border-radius: 8px 8px 0 0 !important;
+  border-radius: 8px !important;
 }
 
 #page-listing-agent #agent-list .fp-card .fp-body {
   padding: 10px 10px 0 10px;
+  margin-left: 0;
 }
 
-#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-name {
-  margin-left: 15px;
+#page-listing-agent #agent-list .fp-card .fp-body .fp-about {
+  margin-top: 15px;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-about p {
+  margin-bottom: 7px;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author {
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+  padding-right: 0;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-left-side {
+  color: #777777;
+  font-size: 14px;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-left-side .fab {
+  margin-right: 10px;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-right-side {
+  margin-left: 0;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-right-side a {
+  color: #ff5a5f;
+  font-size: 14px;
 }
 
 #page-listing-agent #agent-list .pagination .page-item {

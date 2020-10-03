@@ -1156,20 +1156,45 @@ body {
     }
 
     .fp-card {
-      padding: 0 !important;
       margin-top: 0 !important;
       margin-bottom: 30px;
       box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+      transition: all 0.3s ease;
+      &:hover {
+        box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+      }
       .fp-thumb {
         img {
-          border-radius: 8px 8px 0 0 !important;
+          border-radius: 8px !important;
         }
       }
       .fp-body {
         padding: 10px 10px 0 10px;
+        margin-left: 0;
+        .fp-about {
+          margin-top: 15px;
+          p {
+            margin-bottom: 7px;
+          }
+        }
         .fp-author {
-          .fp-author-name {
-            margin-left: 15px;
+          margin-left: 0;
+          padding-left: 0;
+          padding-bottom: 0;
+          padding-right: 0;
+          .fp-author-left-side {
+            color: #777777;
+            font-size: 14px;
+            .fab {
+              margin-right: 10px;
+            }
+          }
+          .fp-author-right-side {
+            margin-left: 0;
+            a {
+              color: $main-color;
+              font-size: 14px;
+            }
           }
         }
       }
