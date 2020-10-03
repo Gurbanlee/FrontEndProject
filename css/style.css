@@ -1635,4 +1635,93 @@ body #why-us .wcu-cards .wcu-cards-body p {
 
 #page-about {
   background-color: #f7f7f7;
+  color: #484848;
+}
+
+#page-about #head-page-about {
+  background-image: url(../uploads/img/inner-pagebg.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#page-about #head-page-about::before {
+  background-color: #1d293e;
+  bottom: 0;
+  content: "";
+  left: 0;
+  opacity: 0.6;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#page-about #head-page-about .breadcrumb {
+  background-color: transparent;
+}
+
+#page-about #head-page-about .breadcrumb .active {
+  color: #fff;
+}
+
+#page-about #head-page-about .breadcrumb .active::before {
+  color: #fff;
+}
+
+#page-about #head-page-about .breadcrumb a {
+  color: #fff;
+}
+
+#page-about #head-page-about .sections-head {
+  color: #fff;
+}
+
+#page-about #head-page-about .sections-head h3 {
+  font-size: 40px;
+}
+
+#page-about #our-missions {
+  background-color: #f7f7f7;
+  height: 1000px;
+}
+
+#page-about #our-missions .our-missions-about .oma-head,
+#page-about #our-missions .our-missions-about .oma-body {
+  margin-bottom: 45px;
+}
+
+#page-about #our-missions .our-missions-about .oma-head h5,
+#page-about #our-missions .our-missions-about .oma-body h5 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#page-about #our-missions .our-missions-about .oma-body p {
+  font-size: 14px;
+}
+
+#page-about #our-missions .our-missions-about .oma-info .oma-info-icon,
+#page-about #our-missions .our-missions-about .oma-info .oma-info-desc {
+  display: inline-block;
+}
+
+#page-about #our-missions .our-missions-about .oma-info .oma-info-icon {
+  font-size: 40px;
+  color: #ff5a5f;
+}
+
+#page-about #our-missions .our-missions-about .oma-info .oma-info-desc {
+  padding-left: 12px;
+}
+
+#page-about #our-missions .our-missions-about .oma-info .oma-info-desc p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: normal;
+}
+
+#page-about #our-missions .our-missions-about .oma-info .oma-info-desc .count {
+  font-size: 22px;
+  font-weight: bold;
 }
