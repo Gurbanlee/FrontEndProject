@@ -526,12 +526,14 @@ body #header-info .find-home .fh-pills .tab-content .fh-search .fh-search-body .
 }
 
 body #featured,
-body #listing {
+body #listing,
+body #agent-list {
   background-color: #f7f7f7;
 }
 
 body #featured .fp-card,
-body #listing .fp-card {
+body #listing .fp-card,
+body #agent-list .fp-card {
   margin-top: 30px;
   background-color: #fff;
   padding: 10px;
@@ -541,23 +543,27 @@ body #listing .fp-card {
 }
 
 body #featured .fp-card:hover,
-body #listing .fp-card:hover {
+body #listing .fp-card:hover,
+body #agent-list .fp-card:hover {
   cursor: pointer;
   box-shadow: 0px 0px 30px -10px rgba(0, 0, 0, 0.5);
 }
 
 body #featured .fp-card .fp-thumb,
-body #listing .fp-card .fp-thumb {
+body #listing .fp-card .fp-thumb,
+body #agent-list .fp-card .fp-thumb {
   position: relative;
 }
 
 body #featured .fp-card .fp-thumb img,
-body #listing .fp-card .fp-thumb img {
+body #listing .fp-card .fp-thumb img,
+body #agent-list .fp-card .fp-thumb img {
   border-radius: 8px;
 }
 
 body #featured .fp-card .fp-thumb .red-con,
-body #listing .fp-card .fp-thumb .red-con {
+body #listing .fp-card .fp-thumb .red-con,
+body #agent-list .fp-card .fp-thumb .red-con {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -570,31 +576,36 @@ body #listing .fp-card .fp-thumb .red-con {
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb,
-body #listing .fp-card .fp-thumb .fp-on-thumb {
+body #listing .fp-card .fp-thumb .fp-on-thumb,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb {
   position: relative;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side {
   position: absolute;
   top: -45px;
   left: 30px;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .fp-price {
   font-size: 22px;
   color: #fff;
   font-weight: 700;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-left-side .text-muted {
   color: #fff !important;
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
   position: absolute;
   right: 30px;
   bottom: 10px;
@@ -602,7 +613,8 @@ body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side {
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
   display: inline-block;
   background-color: rgba(0, 0, 0, 0.5);
   width: 35px;
@@ -613,36 +625,42 @@ body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg {
 }
 
 body #featured .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
-body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
+body #listing .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i,
+body #agent-list .fp-card .fp-thumb .fp-on-thumb .fp-right-side .fp-black-bg i {
   line-height: 2.2;
 }
 
 body #featured .fp-card .fp-body,
-body #listing .fp-card .fp-body {
+body #listing .fp-card .fp-body,
+body #agent-list .fp-card .fp-body {
   margin: 15px 0 20px 10px;
 }
 
 body #featured .fp-card .fp-body .fp-category,
-body #listing .fp-card .fp-body .fp-category {
+body #listing .fp-card .fp-body .fp-category,
+body #agent-list .fp-card .fp-body .fp-category {
   color: #ff5a5f;
   font-size: 14px;
 }
 
 body #featured .fp-card .fp-body .fp-title,
-body #listing .fp-card .fp-body .fp-title {
+body #listing .fp-card .fp-body .fp-title,
+body #agent-list .fp-card .fp-body .fp-title {
   font-weight: 700;
   font-size: 18px;
 }
 
 body #featured .fp-card .fp-body .fp-address,
-body #listing .fp-card .fp-body .fp-address {
+body #listing .fp-card .fp-body .fp-address,
+body #agent-list .fp-card .fp-body .fp-address {
   font-size: 14px;
   line-height: 1.2;
   word-spacing: -3px;
 }
 
 body #featured .fp-card .fp-body .fp-about,
-body #listing .fp-card .fp-body .fp-about {
+body #listing .fp-card .fp-body .fp-about,
+body #agent-list .fp-card .fp-body .fp-about {
   font-size: 14px;
   line-height: 1.2;
 }
@@ -650,12 +668,15 @@ body #listing .fp-card .fp-body .fp-about {
 body #featured .fp-card .fp-body .fp-about .fp-about-bed,
 body #featured .fp-card .fp-body .fp-about .fp-about-baths,
 body #listing .fp-card .fp-body .fp-about .fp-about-bed,
-body #listing .fp-card .fp-body .fp-about .fp-about-baths {
+body #listing .fp-card .fp-body .fp-about .fp-about-baths,
+body #agent-list .fp-card .fp-body .fp-about .fp-about-bed,
+body #agent-list .fp-card .fp-body .fp-about .fp-about-baths {
   margin-right: 30px;
 }
 
 body #featured .fp-card .fp-body .fp-author,
-body #listing .fp-card .fp-body .fp-author {
+body #listing .fp-card .fp-body .fp-author,
+body #agent-list .fp-card .fp-body .fp-author {
   border-top: 1px solid #eeeeee;
   padding: 20px;
   margin-top: 25px;
@@ -663,18 +684,21 @@ body #listing .fp-card .fp-body .fp-author {
 }
 
 body #featured .fp-card .fp-body .fp-author .fp-author-left-side,
-body #listing .fp-card .fp-body .fp-author .fp-author-left-side {
+body #listing .fp-card .fp-body .fp-author .fp-author-left-side,
+body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side {
   display: inline-block;
 }
 
 body #featured .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
-body #listing .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
+body #listing .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img,
+body #agent-list .fp-card .fp-body .fp-author .fp-author-left-side .fp-author-img {
   width: 30px;
   display: inline-block;
 }
 
 body #featured .fp-card .fp-body .fp-author .fp-author-right-side,
-body #listing .fp-card .fp-body .fp-author .fp-author-right-side {
+body #listing .fp-card .fp-body .fp-author .fp-author-right-side,
+body #agent-list .fp-card .fp-body .fp-author .fp-author-right-side {
   display: inline-block;
   margin-left: 75px;
 }
@@ -1533,4 +1557,97 @@ body #why-us .wcu-cards .wcu-cards-body p {
   font-size: 18px;
   bottom: 20px;
   left: 20px;
+}
+
+#page-listing-agent #agent-list .filter {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 8px;
+  height: 60px;
+  margin: 0 auto 30px;
+  padding: 0 15px;
+  width: 96%;
+  display: flex;
+  color: #555555;
+}
+
+#page-listing-agent #agent-list .filter .filter-left-side p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side .filter-rs-sort {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side span {
+  font-weight: bold;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side .btn-group {
+  display: inline-block;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side .btn-group button {
+  padding-left: 0;
+}
+
+#page-listing-agent #agent-list .filter .filter-right-side .btn-group .btn-secondary {
+  background-color: transparent;
+  color: #000;
+  font-size: 14px;
+  border-color: transparent;
+}
+
+#page-listing-agent #agent-list .fp-card {
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 30px;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+}
+
+#page-listing-agent #agent-list .fp-card .fp-thumb img {
+  border-radius: 8px 8px 0 0 !important;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body {
+  padding: 10px 10px 0 10px;
+}
+
+#page-listing-agent #agent-list .fp-card .fp-body .fp-author .fp-author-name {
+  margin-left: 15px;
+}
+
+#page-listing-agent #agent-list .pagination .page-item {
+  margin-right: 20px;
+}
+
+#page-listing-agent #agent-list .pagination .page-item .disabled {
+  background-color: #ff5a5f;
+  color: #fff !important;
+}
+
+#page-listing-agent #agent-list .pagination .page-item .page-link {
+  border-radius: 50%;
+  color: #555555;
+  font-weight: 400;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 2.5;
+  border-color: #ebebeb;
+  font-size: 14px;
+  color: #777777;
+}
+
+#page-listing-agent #agent-list .pagination .page-item .page-link:hover {
+  background-color: #ff5a5f;
+  color: #fff;
 }
