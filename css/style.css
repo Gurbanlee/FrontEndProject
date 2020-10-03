@@ -1681,7 +1681,6 @@ body #why-us .wcu-cards .wcu-cards-body p {
 
 #page-about #our-missions {
   background-color: #f7f7f7;
-  height: 1000px;
 }
 
 #page-about #our-missions .our-missions-about .oma-head,
@@ -1724,4 +1723,42 @@ body #why-us .wcu-cards .wcu-cards-body p {
 #page-about #our-missions .our-missions-about .oma-info .oma-info-desc .count {
   font-size: 22px;
   font-weight: bold;
+}
+
+#page-about #our-missions .our-missions-thumb {
+  position: relative;
+}
+
+#page-about #our-missions .our-missions-thumb img {
+  border-radius: 8px;
+}
+
+#page-about #our-missions .our-missions-thumb a {
+  position: absolute;
+  background: #ff5a5f;
+  border-radius: 100%;
+  font-size: 22px;
+  height: 70px;
+  left: 0;
+  line-height: 70px;
+  margin: 0 auto;
+  right: 0;
+  text-align: center;
+  top: 39%;
+  width: 70px;
+}
+
+#page-about #our-missions .our-missions-thumb a::after {
+  background-color: rgba(255, 90, 95, 0.2);
+  border-radius: 100%;
+  content: "";
+  height: 87px;
+  left: -7px;
+  position: absolute;
+  top: -7px;
+  width: 87px;
+}
+
+#page-about #our-missions .our-missions-thumb a i {
+  color: #fff;
 }

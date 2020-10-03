@@ -1218,7 +1218,6 @@ body {
   }
   #our-missions {
     background-color: $section-bg;
-    height: 1000px;
     .our-missions-about {
       .oma-head,
       .oma-body {
@@ -1258,6 +1257,40 @@ body {
         }
       }
     }
-    
+    .our-missions-thumb {
+      position: relative;
+      img {
+        border-radius: 8px;
+      }
+      a {
+        position: absolute;
+        background: #ff5a5f;
+        border-radius: 100%;
+        font-size: 22px;
+        height: 70px;
+        left: 0;
+        line-height: 70px;
+        margin: 0 auto;
+        right: 0;
+        text-align: center;
+        top: 39%;
+        width: 70px;
+        &::after {
+          background-color: rgba(255, 90, 95, 0.2);
+          border-radius: 100%;
+          content: "";
+          height: 87px;
+          left: -7px;
+          position: absolute;
+          top: -7px;
+          width: 87px;
+        }
+        i {
+          color: $white;
+        }
+      }
+    }
   }
+
+  
 }
