@@ -1183,6 +1183,7 @@ body {
 #page-about {
   background-color: #f7f7f7;
   color: #484848;
+  padding-top: 0;
   #head-page-about {
     background-image: url(../uploads/img/inner-pagebg.jpg);
     background-repeat: no-repeat;
@@ -1294,5 +1295,63 @@ body {
   #why-us {
     padding-top: 5px;
   }
-  
+  #our-team {
+    background-color: $section-bg;
+    .ot-card {
+      background-color: $white;
+      padding: 10px;
+      border-radius: 8px;
+      &:hover {
+        cursor: pointer;
+      }
+      &:hover {
+        .otc-thumb {
+          .otc-overlay {
+            opacity: 1;
+          }
+        }
+      }
+      .otc-thumb {
+        position: relative;
+        border-radius: 8px;
+        .otc-overlay {
+          position: absolute;
+          background-color: transparentize($main-color, 0.3);
+          border-radius: 8px;
+          bottom: 0;
+          left: 0;
+          opacity: 0;
+          right: 0;
+          top: 0;
+          transition: all 0.3s ease;
+          .otc-social {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            a {
+              margin-right: 20px;
+              color: $white;
+              font-size: 13px;
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+      .otc-body {
+        margin-top: 20px;
+        h5 {
+          text-transform: capitalize;
+          font-size: 18px;
+        }
+        p {
+          font-size: 14px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
