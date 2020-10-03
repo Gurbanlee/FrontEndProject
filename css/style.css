@@ -301,6 +301,59 @@ body {
   line-height: 1.65;
 }
 
+body header .page-head {
+  padding: 10px 0;
+}
+
+body header .page-head nav .navbar-brand span {
+  line-height: 1.8;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 10px;
+}
+
+body header .page-head nav ul li {
+  margin-right: 30px;
+}
+
+body header .page-head nav ul li:nth-child(6) {
+  margin-right: 0;
+}
+
+body header .page-head nav ul li a {
+  color: #484848;
+}
+
+body header .page-head nav ul li button {
+  font-size: 16px;
+  background-color: #ff5a5f;
+  border-color: #ff5a5f;
+  color: #fff;
+  width: 180px;
+  height: 50px;
+  border-radius: 25px;
+  text-transform: capitalize;
+}
+
+body header .page-head nav ul .nav-login {
+  position: relative;
+}
+
+body header .page-head nav ul .nav-login::before {
+  background-color: #e8eef2;
+  content: "";
+  height: 38px;
+  left: -5px;
+  position: absolute;
+  right: 0;
+  width: 1px;
+  margin-left: 5px;
+}
+
+body header .page-head nav ul .nav-login .flaticon-user::before {
+  padding-right: 10px;
+}
+
 body a:hover {
   text-decoration: none;
 }
@@ -1071,59 +1124,6 @@ body #why-us .wcu-cards .wcu-cards-body p {
   color: #484848;
 }
 
-#page-list-grid #page-head {
-  padding: 10px 0;
-}
-
-#page-list-grid #page-head nav .navbar-brand span {
-  line-height: 1.8;
-  font-weight: bold;
-  font-size: 28px;
-  margin-left: 10px;
-}
-
-#page-list-grid #page-head nav ul li {
-  margin-right: 30px;
-}
-
-#page-list-grid #page-head nav ul li:nth-child(6) {
-  margin-right: 0;
-}
-
-#page-list-grid #page-head nav ul li a {
-  color: #484848;
-}
-
-#page-list-grid #page-head nav ul li button {
-  font-size: 16px;
-  background-color: #ff5a5f;
-  border-color: #ff5a5f;
-  color: #fff;
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  text-transform: capitalize;
-}
-
-#page-list-grid #page-head nav ul .nav-login {
-  position: relative;
-}
-
-#page-list-grid #page-head nav ul .nav-login::before {
-  background-color: #e8eef2;
-  content: "";
-  height: 38px;
-  left: -5px;
-  position: absolute;
-  right: 0;
-  width: 1px;
-  margin-left: 5px;
-}
-
-#page-list-grid #page-head nav ul .nav-login .flaticon-user::before {
-  padding-right: 10px;
-}
-
 #page-list-grid #listing {
   background-color: #f7f7f7;
 }
@@ -1327,59 +1327,6 @@ body #why-us .wcu-cards .wcu-cards-body p {
 
 #page-listing-agent {
   color: #484848;
-}
-
-#page-listing-agent #page-head {
-  padding: 10px 0;
-}
-
-#page-listing-agent #page-head nav .navbar-brand span {
-  line-height: 1.8;
-  font-weight: bold;
-  font-size: 28px;
-  margin-left: 10px;
-}
-
-#page-listing-agent #page-head nav ul li {
-  margin-right: 30px;
-}
-
-#page-listing-agent #page-head nav ul li:nth-child(6) {
-  margin-right: 0;
-}
-
-#page-listing-agent #page-head nav ul li a {
-  color: #484848;
-}
-
-#page-listing-agent #page-head nav ul li button {
-  font-size: 16px;
-  background-color: #ff5a5f;
-  border-color: #ff5a5f;
-  color: #fff;
-  width: 180px;
-  height: 50px;
-  border-radius: 25px;
-  text-transform: capitalize;
-}
-
-#page-listing-agent #page-head nav ul .nav-login {
-  position: relative;
-}
-
-#page-listing-agent #page-head nav ul .nav-login::before {
-  background-color: #e8eef2;
-  content: "";
-  height: 38px;
-  left: -5px;
-  position: absolute;
-  right: 0;
-  width: 1px;
-  margin-left: 5px;
-}
-
-#page-listing-agent #page-head nav ul .nav-login .flaticon-user::before {
-  padding-right: 10px;
 }
 
 #page-listing-agent #agent-list {

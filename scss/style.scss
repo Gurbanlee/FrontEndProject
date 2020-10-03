@@ -7,6 +7,62 @@ body {
   font-family: "Nunito", sans-serif;
   font-size: 16px;
   line-height: 1.65;
+
+  header {
+    .page-head {
+      padding: 10px 0;
+      nav {
+        .navbar-brand {
+          span {
+            line-height: 1.8;
+            font-weight: bold;
+            font-size: 28px;
+            margin-left: 10px;
+          }
+        }
+        ul {
+          li {
+            margin-right: 30px;
+            &:nth-child(6) {
+              margin-right: 0;
+            }
+            a {
+              color: #484848;
+            }
+            button {
+              font-size: 16px;
+              background-color: $main-color;
+              border-color: $main-color;
+              color: $white;
+              width: 180px;
+              height: 50px;
+              border-radius: 25px;
+              text-transform: capitalize;
+            }
+          }
+          .nav-login {
+            position: relative;
+            &::before {
+              background-color: #e8eef2;
+              content: "";
+              height: 38px;
+              left: -5px;
+              position: absolute;
+              right: 0;
+              width: 1px;
+              margin-left: 5px;
+            }
+            .flaticon-user {
+              &::before {
+                padding-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
   a {
     &:hover {
       text-decoration: none;
@@ -668,58 +724,6 @@ body {
   h6 {
     color: #484848;
   }
-  #page-head {
-    padding: 10px 0;
-    nav {
-      .navbar-brand {
-        span {
-          line-height: 1.8;
-          font-weight: bold;
-          font-size: 28px;
-          margin-left: 10px;
-        }
-      }
-      ul {
-        li {
-          margin-right: 30px;
-          &:nth-child(6) {
-            margin-right: 0;
-          }
-          a {
-            color: #484848;
-          }
-          button {
-            font-size: 16px;
-            background-color: $main-color;
-            border-color: $main-color;
-            color: $white;
-            width: 180px;
-            height: 50px;
-            border-radius: 25px;
-            text-transform: capitalize;
-          }
-        }
-        .nav-login {
-          position: relative;
-          &::before {
-            background-color: #e8eef2;
-            content: "";
-            height: 38px;
-            left: -5px;
-            position: absolute;
-            right: 0;
-            width: 1px;
-            margin-left: 5px;
-          }
-          .flaticon-user {
-            &::before {
-              padding-right: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
 
   #listing {
     background-color: #f7f7f7;
@@ -903,58 +907,6 @@ body {
 
 #page-listing-agent {
   color: #484848;
-  #page-head {
-    padding: 10px 0;
-    nav {
-      .navbar-brand {
-        span {
-          line-height: 1.8;
-          font-weight: bold;
-          font-size: 28px;
-          margin-left: 10px;
-        }
-      }
-      ul {
-        li {
-          margin-right: 30px;
-          &:nth-child(6) {
-            margin-right: 0;
-          }
-          a {
-            color: #484848;
-          }
-          button {
-            font-size: 16px;
-            background-color: $main-color;
-            border-color: $main-color;
-            color: $white;
-            width: 180px;
-            height: 50px;
-            border-radius: 25px;
-            text-transform: capitalize;
-          }
-        }
-        .nav-login {
-          position: relative;
-          &::before {
-            background-color: #e8eef2;
-            content: "";
-            height: 38px;
-            left: -5px;
-            position: absolute;
-            right: 0;
-            width: 1px;
-            margin-left: 5px;
-          }
-          .flaticon-user {
-            &::before {
-              padding-right: 10px;
-            }
-          }
-        }
-      }
-    }
-  }
 
   #agent-list {
     background-color: #f7f7f7;
