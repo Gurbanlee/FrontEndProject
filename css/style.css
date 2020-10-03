@@ -1762,3 +1762,7 @@ body #why-us .wcu-cards .wcu-cards-body p {
 #page-about #our-missions .our-missions-thumb a i {
   color: #fff;
 }
+
+#page-about #why-us {
+  padding: 5px 0;
+}
