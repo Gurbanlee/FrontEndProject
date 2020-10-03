@@ -88,8 +88,7 @@ body {
 
   ////////////// OWL SETTINGS //////////////
   .owl-one,
-  .owl-two,
-  .owl-sidebar {
+  .owl-two {
     .owl-dots {
       .owl-dot {
         background-color: transparent;
@@ -1379,5 +1378,143 @@ body {
   }
   #partners {
     background-color: $section-bg;
+  }
+}
+
+#head-page-agent-detail {
+  background-color: $section-bg;
+  color: #484848;
+  .breadcrumb {
+    background-color: transparent;
+    .active {
+      color: $main-color;
+    }
+    a {
+      color: #555555;
+    }
+  }
+
+  .sidebar {
+    background-color: $white;
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 8px;
+    padding: 30px 25px;
+    font-size: 14px;
+    margin-bottom: 30px;
+
+    .sidebar-content {
+      .sidebar-title {
+        margin-bottom: 25px;
+      }
+      .sidebar-item {
+        a {
+          color: #484848;
+          &:hover {
+            color: $main-color;
+          }
+        }
+        .mini-blog {
+          margin-top: 20px;
+          color: #484848;
+          cursor: pointer;
+          .mini-blog-body {
+            .mbb-title {
+              text-transform: capitalize;
+              h5 {
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 1.2;
+              }
+            }
+            .mbb-price {
+              color: $main-color;
+              font-weight: bold;
+              font-size: 16px;
+              span {
+                font-size: 14px;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+      }
+      input,
+      select {
+        height: 50px;
+        border-radius: 8px;
+        border: 1px solid rgb(235, 235, 235);
+        line-height: 1.2;
+        padding-left: 20px;
+      }
+      i {
+        margin-right: 10px;
+        color: #555555;
+      }
+
+      button {
+        width: 100%;
+        height: 50px;
+        margin-top: 20px;
+        background-color: $main-color;
+        border-color: $main-color;
+        &:hover {
+          background-color: $white;
+          border: 2px solid $main-color;
+          color: $main-color;
+        }
+      }
+    }
+    .sidebar-thumb {
+      position: relative;
+      padding: 10px;
+      border: 1px solid rgb(235, 235, 235);
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.09);
+      &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 50px 0px rgba(19, 19, 28, 0.12);
+      }
+      img {
+        border-radius: 8px;
+      }
+      .sidebar-for-rent,
+      .sidebar-featured {
+        position: absolute;
+        text-transform: capitalize;
+        padding: 2px 13px;
+        border-radius: 5px;
+        color: $white;
+      }
+      .sidebar-for-rent {
+        top: 20px;
+        left: 20px;
+        background-color: #3e4c66;
+      }
+      .sidebar-featured {
+        top: 20px;
+        left: 110px;
+        background-color: $main-color;
+      }
+      .sidebar-price {
+        position: absolute;
+        color: $white;
+        font-size: 22px;
+        font-weight: 900;
+        bottom: 30px;
+        left: 20px;
+        span {
+          font-size: 14px;
+          font-weight: normal;
+        }
+      }
+      .sidebar-thumb-title {
+        position: absolute;
+        color: $white;
+        font-size: 18px;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
   }
 }
