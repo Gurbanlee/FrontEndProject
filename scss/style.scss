@@ -1000,6 +1000,14 @@ body {
         .sidebar-title {
           margin-bottom: 25px;
         }
+        .sidebar-item {
+          a {
+            color: #484848;
+            &:hover {
+              color: $main-color;
+            }
+          }
+        }
         input,
         select {
           height: 50px;
