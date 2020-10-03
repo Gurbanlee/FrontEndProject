@@ -1419,6 +1419,33 @@ body #why-us .wcu-cards .wcu-cards-body p {
   color: #ff5a5f;
 }
 
+#page-listing-agent #agent-list .sidebar .sidebar-content .sidebar-item .mini-blog {
+  margin-top: 20px;
+  color: #484848;
+  cursor: pointer;
+}
+
+#page-listing-agent #agent-list .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title {
+  text-transform: capitalize;
+}
+
+#page-listing-agent #agent-list .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-title h5 {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+#page-listing-agent #agent-list .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price {
+  color: #ff5a5f;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+#page-listing-agent #agent-list .sidebar .sidebar-content .sidebar-item .mini-blog .mini-blog-body .mbb-price span {
+  font-size: 14px;
+  font-weight: normal;
+}
+
 #page-listing-agent #agent-list .sidebar .sidebar-content input,
 #page-listing-agent #agent-list .sidebar .sidebar-content select {
   height: 50px;

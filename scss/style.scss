@@ -1007,6 +1007,30 @@ body {
               color: $main-color;
             }
           }
+          .mini-blog {
+            margin-top: 20px;
+            color: #484848;
+            cursor: pointer;
+            .mini-blog-body {
+              .mbb-title {
+                text-transform: capitalize;
+                h5 {
+                  font-weight: bold;
+                  font-size: 16px;
+                  line-height: 1.2;
+                }
+              }
+              .mbb-price {
+                color: $main-color;
+                font-weight: bold;
+                font-size: 16px;
+                span {
+                  font-size: 14px;
+                  font-weight: normal;
+                }
+              }
+            }
+          }
         }
         input,
         select {
