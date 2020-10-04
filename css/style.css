@@ -1898,6 +1898,44 @@ body #footer-down .footer-down-list ul li a:hover {
   color: #555555;
 }
 
+#agent-detail #head-page-agent-detail form {
+  margin-top: 30px;
+}
+
+#agent-detail #head-page-agent-detail form .form-group input,
+#agent-detail #head-page-agent-detail form .form-group textarea {
+  border-radius: 8px;
+  border-color: #ebebeb;
+  margin-bottom: 20px;
+  font-size: 14px;
+  padding: 20px;
+}
+
+#agent-detail #head-page-agent-detail form .form-group input {
+  height: 50px;
+}
+
+#agent-detail #head-page-agent-detail form .form-group textarea {
+  margin-bottom: 0;
+}
+
+#agent-detail #head-page-agent-detail form button {
+  height: 50px;
+  width: 200px;
+  font-weight: bold;
+  box-shadow: 0px 1px 4px 0px rgba(255, 90, 95, 0.3);
+  background-color: #ff5a5f;
+  color: #fff;
+  border-color: #ff5a5f;
+  border-radius: 8px;
+  margin: 15px 0;
+}
+
+#agent-detail #head-page-agent-detail form button:hover {
+  background-color: #fff;
+  color: #ff5a5f;
+}
+
 #agent-detail #head-page-agent-detail .sidebar {
   background-color: #fff;
   border: 1px solid #ebebeb;
@@ -1963,9 +2001,11 @@ body #footer-down .footer-down-list ul li a:hover {
 #agent-detail #head-page-agent-detail .sidebar .sidebar-content button {
   width: 100%;
   height: 50px;
-  margin-top: 20px;
   background-color: #ff5a5f;
   border-color: #ff5a5f;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
 }
 
 #agent-detail #head-page-agent-detail .sidebar .sidebar-content button:hover {
@@ -2087,7 +2127,11 @@ body #footer-down .footer-down-list ul li a:hover {
   border-radius: 8px;
 }
 
-#agent-detail #head-page-agent-detail .agent-detail-tabs ul li .nav-link {
+#agent-detail #head-page-agent-detail .agent-detail-tabs ul {
+  list-style-type: none;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .nav-tabs .nav-item .nav-link {
   font-weight: bold;
   font-size: 18px;
   color: #484848;
@@ -2095,7 +2139,7 @@ body #footer-down .footer-down-list ul li a:hover {
   padding: 8px 0;
 }
 
-#agent-detail #head-page-agent-detail .agent-detail-tabs ul li .active {
+#agent-detail #head-page-agent-detail .agent-detail-tabs .nav-tabs .nav-item .active {
   border-bottom: 1px solid #ff5a5f;
   color: #ff5a5f;
 }
@@ -2104,7 +2148,88 @@ body #footer-down .footer-down-list ul li a:hover {
   margin-top: 30px;
 }
 
-#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content p {
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane p {
   font-size: 14px;
   line-height: 1.9;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review {
+  font-size: 14px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review span {
+  margin-left: 10px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .stars .fas {
+  color: #bcc52a;
+  margin-right: 5px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-total {
+  position: relative;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-total .rt-count {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-total a {
+  color: #ff5a5f;
+  position: absolute;
+  right: 0;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all {
+  margin-top: 30px;
+  padding: 0;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single {
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 30px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single:last-child {
+  margin-bottom: 0;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single .review-single-body {
+  margin-left: 10px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single .review-single-body .rsb-head {
+  margin-bottom: 10px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single .review-single-body .rsb-head h5 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .reviews .review-all .review-single .review-single-body .rsb-head .stars {
+  font-size: 13px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .review-write {
+  margin-top: 30px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .review-write h5 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .review-write .stars {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content .tab-pane .review .review-write .stars span {
+  font-size: 14px;
 }
