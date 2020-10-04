@@ -2079,3 +2079,32 @@ body #footer-down .footer-down-list ul li a:hover {
   font-size: 14px;
   color: #ff5a5f;
 }
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs ul li .nav-link {
+  font-weight: bold;
+  font-size: 18px;
+  color: #484848;
+  border: none;
+  padding: 8px 0;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs ul li .active {
+  border-bottom: 1px solid #ff5a5f;
+  color: #ff5a5f;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content {
+  margin-top: 30px;
+}
+
+#agent-detail #head-page-agent-detail .agent-detail-tabs .tab-content p {
+  font-size: 14px;
+  line-height: 1.9;
+}

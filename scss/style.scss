@@ -1554,5 +1554,34 @@ body {
         }
       }
     }
+    .agent-detail-tabs {
+      margin-top: 30px;
+      background-color: $white;
+      padding: 10px 30px;
+      border-radius: 8px;
+      ul {
+        li {
+          .nav-link {
+            font-weight: bold;
+            font-size: 18px;
+            color: #484848;
+            border: none;
+            padding: 8px 0;
+
+          }
+          .active {
+            border-bottom: 1px solid $main-color;
+            color: $main-color;
+          }
+        }
+      }
+      .tab-content{
+        margin-top: 30px;
+        p{
+          font-size: 14px;
+          line-height: 1.9;
+        }
+      }
+    }
   }
 }
